@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Accounts_EditInforController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/user_userprofilepage.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="600.0" styleClass="topBar" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lbldate" prefHeight="35.0" prefWidth="191.0" text="Date :12/12/2018 ">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CALENDAR" size="25.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_group" layoutX="200.0" layoutY="23.0" prefHeight="35.0" prefWidth="209.0" text="Administrator">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView glyphName="ACCOUNT_MULTIPLE" size="25.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_username" layoutX="169.0" layoutY="23.0" prefHeight="35.0" prefWidth="187.0" text="Erick Yaah" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="25.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox maxHeight="525.0" maxWidth="550.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="223.0" prefWidth="495.0">
+                           <children>
+                              <StackPane prefHeight="209.0" prefWidth="200.0">
+                                 <children>
+                                    <Circle fx:id="imgcircle" fill="WHITE" radius="100.0" stroke="SEAGREEN" strokeType="INSIDE" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="550.0">
+                           <children>
+                              <JFXTextField fx:id="username" labelFloat="true" prefHeight="30.0" prefWidth="250.0" promptText="New User Name">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton fx:id="btn_changeuname" onAction="#changeName" prefHeight="30.0" prefWidth="100.0" text="Change Name" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="243.0" prefHeight="85.0" prefWidth="550.0" spacing="20.0">
+                           <children>
+                              <JFXPasswordField fx:id="f_password" labelFloat="true" prefHeight="30.0" prefWidth="180.0" promptText="New Password">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="s_password" labelFloat="true" layoutX="10.0" layoutY="26.0" prefHeight="30.0" prefWidth="180.0" promptText="Re-Enter Password">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXButton fx:id="btn_changepass" onAction="#changePass" prefHeight="30.0" prefWidth="130.0" text="Change Password" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="15.0" layoutY="243.0" prefHeight="57.0" prefWidth="590.0" spacing="5.0">
+                           <children>
+                              <JFXButton fx:id="btn_files" layoutX="330.0" layoutY="24.0" onAction="#openFileChooser" prefHeight="30.0" prefWidth="130.0" text="Profile Photo">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="SEAGREEN" glyphName="CAMERA" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txt_path" editable="false" prefHeight="25.0" prefWidth="257.0" promptText="Path" />
+                              <JFXButton fx:id="btn_savePhoto" onAction="#saveImage" prefHeight="30.0" prefWidth="165.0" text="Save New Photo" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <left>
+                  <VBox prefHeight="524.0" prefWidth="40.0" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</StackPane>

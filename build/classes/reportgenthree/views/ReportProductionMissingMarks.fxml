@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="350.0" style="-fx-border-color: orangered;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="reportgenthree.views.ReportProductionMissingMarksController">
+    <stylesheets>
+        <URL value="@/reportgenthree/AppCss/reportproductionmissingmarks.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView fill="ORANGERED" glyphName="EXCLAMATION_TRIANGLE" size="250.0" wrappingWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="400.0">
+               <children>
+                  <Label prefHeight="73.0" prefWidth="357.0" text="Sorry The Student Has Missing Marks,Cant  Create Report Form, Confirm All Marks Are Available  And All Units Were Done And Try Again" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="400.0">
+               <children>
+                  <JFXButton fx:id="btn_close" buttonType="RAISED" onAction="#close" prefHeight="31.0" prefWidth="101.0" text="Ok" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,268 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 19, 2018, 4:33:44 PM
+    Author     : Computer
+*/
+
+.table-view .column-header {
+     -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+     -fx-background-color: transparent; 
+    /*-fx-font-weight:bold;*/
+    -fx-text-fill: green;
+}
+
+.table-view .table-column{
+    -fx-alignment:CENTER_LEFT;
+}
+
+.table-view .table-cell{
+    
+    -fx-font-size:13px;          
+    -fx-text-fill:#cc00cc;
+
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 18, 2018, 1:03:09 PM
+    Author     : Computer
+*/
+
+
+
+.mainFxmlClass {
+
+    -fx-background-color:#ccffcc; 
+}
+
+.searchBar{
+    
+    -fx-border-color: #cccccc;
+    -fx-background-color: #cccccc;
+    
+}
+
+.searchBar:hover>.glyph-icon{
+    
+    -fx-fill: white;
+    
+}
+
+#infor_box{
+    
+    -fx-border-color:deepskyblue;
+    -fx-border-width:1;
+    -fx-border-radius: 5;
+    -fx-background-color: #ccffcc;
+     
+    
+}
+
+#infor_box:hover{
+    
+    -fx-border-color:green;
+    -fx-border-width:1;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+    
+     
+    
+}
+
+#infor_box_inner:hover{
+    
+    -fx-background-color: white;
+    -fx-text-fill:blue;
+    -fx-font-weight:bold;
+    
+}
+
+
+#infor_box:hover >.infor_box_inner.label{
+    
+    -fx-text-fill:blue;
+    
+}
+
+#infor_box_inner:hover >.label{
+    
+    -fx-text-fill:blue;
+    
+}
+
+.label{
+    
+    -fx-font-size:16;
+    
+    
+}
+
+.button{
+    
+   /*-fx-border-color: deepskyblue;
+   // -fx-text-fill: green;
+   // -fx-fill: red;*/
+}
+
+.button:hover>.glyph-icon{
+    
+    
+    -fx-fill: red;
+}
+
+.button>.glyph-icon{
+    
+    
+    -fx-fill: deeppink;
+    
+}
+
+#lbl_error>.glyph-icon{
+    
+    -fx-font-size:150px;
+    -fx-fill:orangered;
+    
+}
+
+#lbl_error{
+    
+    -fx-font-size:20;
+    -fx-fill:orangered;
+    
+}
+
+#lbl_infor>.glyph-icon{
+    
+    -fx-font-size:150px;
+    -fx-fill:green;
+    
+}
+
+#lbl_infor{
+    
+    -fx-font-size:20;
+    -fx-fill:orangered;
+    
+}
+
+.tableView{
+    
+    -fx-cell-size: 40px;
+    
+    
+}
+
+
+
+.table-view .table-cell{
+    
+    -fx-font-size:13px;          
+    /* -fx-text-fill:orange; */
+
+}
+
+.hbox_bar{
+    
+    -fx-background-color:seagreen; 
+        
+    
+}
+
+.combobox:focused{
+    
+    -fx-border-color:white; 
+        
+    
+}
+
+
+
+.combo-box>.label {
+    
+	-fx-text-fill: white;
+                -fx-font-size:13;
+}
+
+.combo-box .list-cell {
+      -fx-text-fill: black;
+        -fx-font-size:13;
+        -fx-background-color:seagreen;
+}
+
+.combo-box .list-cell:hover {
+	
+        -fx-background-color:white;
+}
+
+
+/******************************************************************************/
+.combo-box-base, .choice-box {
+	-fx-background-color: transparent;
+	
+	-fx-border-width: 0 0 2 0;
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+}
+
+
+.combo-box-base>.label, .choice-box>.label {
+	-fx-padding: 0.7em 0.7em 0.7em 0em;
+                
+}
+
+.combo-box-base>.arrow-button, .choice-box>.open-button {
+	-fx-padding: 1.2em 0.7em 1.2em 0.5em;
+	-fx-background-radius: 0.0 2.0 2.0 0.0;
+}
+
+.combo-box-base>.arrow-button>.arrow, .choice-box>.open-button>.arrow {
+	-fx-background-color: white;
+               -fx-padding: 2px;
+}
+
+.combo-box-base .arrow-button:hover .arrow, .spinner .increment-arrow-button:hover .increment-arrow,
+	.spinner .decrement-arrow-button:hover .decrement-arrow {
+	-fx-background-color: white;
+}
+
+.menu-item:focused {
+	-fx-background-color: white;
+}
+
+#title-pane>.title{
+    
+   -fx-padding: 10px;
+   -fx-border-radius: 0 0 0 0;
+   -fx-background-radius: 0 0 0 0;
+   
+    
+}
+
+#title-pane>.title>.text{
+    
+   -fx-font-size:15px;
+   -fx-fill: seagreen;
+    
+}
+
+
+#title-pane>.title>.arrow-button>.arrow{
+    
+   -fx-background-color: green;
+   -fx-padding: 6px;
+    
+}
+
+
+

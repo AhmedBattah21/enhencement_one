@@ -1,0 +1,66 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+    -fx-border-width: 1px;
+    -fx-border-color: deepskyblue;
+}
+
+.JFXButton{
+    
+    -fx-border-color: lightgreen;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    
+}
+
+
+.JFXButton:hover{
+    
+    -fx-border-color:green;
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+    
+}
+
+/******************************************************************************/
+.combo-box-base, .choice-box {
+	-fx-background-color: transparent;
+	
+	-fx-border-width: 0 0 2 0;
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+}
+
+
+
+.combo-box-base>.label, .choice-box>.label {
+	-fx-padding: 1 1 1 1;
+                
+}
+
+.combo-box-base>.arrow-button, .choice-box>.open-button {
+	-fx-padding: 2 2 2 2;
+	-fx-background-radius: 2 2 2 2;
+}
+
+.combo-box-base>.arrow-button>.arrow, .choice-box>.open-button>.arrow {
+	-fx-background-color: seagreen;
+               -fx-padding: 4px;
+}
+
+.combo-box .list-cell {
+      -fx-text-fill: black;
+        -fx-font-size:15;
+       /* -fx-background-color:seagreen;*/
+}
+
+.combo-box .list-cell:hover {
+	
+       /* -fx-background-color:white;*/
+}
+
+
+

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="major_stackpane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.MainpanelController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="906.0" stylesheets="@../AppCss/mainpanel.css">
+         <children>
+            <BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/mainpanel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <center>
+                  <VBox BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER" maxHeight="20.0" prefHeight="20.0" prefWidth="906.0" spacing="5.0" styleClass="design_bar" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" size="20.0" />
+                        <Label prefHeight="23.0" prefWidth="208.0" text="****** ***** ******" textFill="WHITE" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE_ALT" size="20.0" />
+                        <Label text="****** ****** *****" textFill="WHITE" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="WHATSAPP" size="20.0" />
+                        <Label layoutX="462.0" layoutY="27.0" text="***** ****** *****" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="285.0" layoutX="1.0" layoutY="52.0" prefHeight="599.0" prefWidth="0.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="50.0" />
+            <HBox alignment="CENTER_LEFT" maxHeight="50.0" prefHeight="50.0" prefWidth="800.0" styleClass="top_bar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXHamburger fx:id="hamburger" prefHeight="108.0" prefWidth="40.0" />
+                  <JFXButton fx:id="btn_students" alignment="CENTER" onAction="#loadStudents_NavBar" prefHeight="40.0" prefWidth="140.0" styleClass="Button" text="Students" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <MaterialDesignIconView fontSmoothingType="LCD" glyphName="HUMAN_MALE_FEMALE" size="40.0" styleClass="icons" wrappingWidth="44.0" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Students">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_academics" alignment="CENTER" layoutX="10.0" layoutY="10.0" onAction="#loadAcademics_NavBar" prefHeight="40.0" prefWidth="140.0" style="-fx-border-radius: 0 0 0 0;" styleClass="Button" text="Academics">
+                     <graphic>
+                        <MaterialDesignIconView fontSmoothingType="LCD" glyphName="BOOK_MULTIPLE_VARIANT" size="40.0" styleClass="icons" wrappingWidth="41.0" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Academics">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_Accounts" layoutX="115.0" layoutY="10.0" onAction="#loadAccounts_NavBar" prefHeight="40.0" prefWidth="140.0" styleClass="Button" text="Accounts">
+                     <graphic>
+                        <MaterialDesignIconView fontSmoothingType="LCD" glyphName="ACCOUNT" size="40" styleClass="icons" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="User Accounts" textOverrun="LEADING_ELLIPSIS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_fees" layoutX="455.0" layoutY="10.0" onAction="#loadFees_NavBar" prefHeight="42.0" prefWidth="156.0" styleClass="Button" text="Fees">
+                     <tooltip>
+                        <Tooltip text="System Settings">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <graphic>
+                        <FontAwesomeIconView fill="SEAGREEN" glyphName="DOLLAR" size="40.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_datamanager" layoutX="220.0" layoutY="10.0" onAction="#loadSettings_NavBar" prefHeight="42.0" prefWidth="156.0" styleClass="Button" text="Data Manager">
+                     <tooltip>
+                        <Tooltip text="System Settings">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <OctIconView fill="SEAGREEN" glyphName="DATABASE" size="40" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_Settings" layoutX="575.0" layoutY="11.0" onAction="#loadSystemSettings" prefHeight="42.0" prefWidth="156.0" styleClass="Button" text="Settings">
+                     <tooltip>
+                        <Tooltip text="System Settings">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <graphic>
+                        <FontAwesomeIconView fill="SEAGREEN" glyphName="COGS" size="40.0" />
+                     </graphic>
+                  </JFXButton>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="208.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <MenuButton mnemonicParsing="false" prefHeight="53.0" prefWidth="164.0" style="-fx-background-color: seagreen; -fx-border-radius: 0 0 0 0; -fx-background-radius: 0 0 0 0;" text="M.E.RM.S">
+                           <items>
+                              <MenuItem fx:id="hide11" mnemonicParsing="false" onAction="#Add_Mainprofile" text="Home">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="HOME" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="hide1" mnemonicParsing="false" onAction="#loadProfile_NavBar" text="My Profile">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USER" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="hide" mnemonicParsing="false" onAction="#hideRight" text="Hide  Right    Window">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SIGN_OUT" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#Add_ActivityWindow" text="View Activities">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TACHOMETER" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logOut" text="Log Out">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MINUS_SQUARE" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="hide111" mnemonicParsing="false" onAction="#closeApp" text="Close Merms">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="POWER_OFF" size="20.0" />
+                                 </graphic>
+                              </MenuItem>
+                           </items>
+                           <graphic>
+                              <FontAwesomeIconView fill="#e10f63" glyphName="POWER_OFF" size="20.0" />
+                           </graphic>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

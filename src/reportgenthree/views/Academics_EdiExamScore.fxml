@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" prefHeight="462.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Academics_EditExamScoreController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="475.0" maxWidth="425.0" prefHeight="513.0" prefWidth="400.0" styleClass="window" stylesheets="@../AppCss/academics_addnewscore.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="400.0" styleClass="topBar" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="EDIT" size="40.0" />
+                        <Label prefHeight="22.0" prefWidth="121.0" text="Exam Records">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="360.0" styleClass="infor_hbox">
+                           <children>
+                              <TextField fx:id="txt_regno" onKeyReleased="#SetEnabled" prefHeight="34.0" prefWidth="102.0" promptText="Registration Number" />
+                              <Label fx:id="lbl_infor" prefHeight="31.0" prefWidth="156.0" styleClass="lbl_infor">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_eyear" layoutX="11.0" layoutY="16.0" onKeyPressed="#check_eyear" onKeyReleased="#check_eyear" prefHeight="34.0" prefWidth="78.0" promptText="Examination Year" />
+                              <Label fx:id="one" layoutX="118.0" layoutY="17.0" prefHeight="31.0" prefWidth="15.0" styleClass="lbl_infor" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="81.0" prefHeight="45.0" prefWidth="338.0" styleClass="infor_hbox">
+                           <children>
+                              <Label fx:id="std_name" prefHeight="39.0" prefWidth="315.0" text="Student Name">
+                                 <font>
+                                    <Font name="Bodoni MT" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="338.0" styleClass="infor_hbox">
+                           <children>
+                              <Label fx:id="std_course" prefHeight="39.0" prefWidth="315.0" text="Student Course">
+                                 <font>
+                                    <Font name="Bodoni MT" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="81.0" prefHeight="45.0" prefWidth="338.0" spacing="3.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" styleClass="infor_hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ComboBox fx:id="cmb_examname" onAction="#check_examname" prefWidth="150.0" promptText="Select Examination" />
+                                    <Label fx:id="two" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" prefWidth="15.0" styleClass="lbl_infortwo" text="Label" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" styleClass="infor_hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ComboBox fx:id="cmb_term" onAction="#check_term" prefHeight="27.0" prefWidth="157.0" promptText="Select Term" />
+                                    <Label fx:id="three" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" prefWidth="15.0" styleClass="lbl_infortwo" text="Label" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="81.0" prefHeight="45.0" prefWidth="360.0" styleClass="infor_hbox">
+                           <children>
+                              <ComboBox fx:id="cmb_unitname" onAction="#check_unitname" prefHeight="27.0" prefWidth="205.0" promptText="Select Unit Name" />
+                              <Label fx:id="four" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" styleClass="lbl_infortwo" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="223.0" prefHeight="45.0" prefWidth="400.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="txt_score" onKeyReleased="#checkScore" prefHeight="34.0" prefWidth="125.0" promptText="New Score" style="-fx-border-color: skyblue; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                              <Label fx:id="lbl_infortwo" prefHeight="30.0" prefWidth="140.0" styleClass="lbl_infor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="71.0" prefWidth="400.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="btn_addscore" buttonType="RAISED" onAction="#EditRecord" prefHeight="40.0" prefWidth="110.0" ripplerFill="#43966c" styleClass="button_one" text="Add Score">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SAVE" size="30.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_clearScore" buttonType="RAISED" layoutX="150.0" layoutY="33.0" onAction="#clear" prefHeight="40.0" prefWidth="110.0" ripplerFill="#2dc375" styleClass="button_one" text="Clear">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TIMES" size="30.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox prefHeight="496.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <VBox prefHeight="543.0" prefWidth="28.0" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

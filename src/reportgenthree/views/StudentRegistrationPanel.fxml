@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="627.0" prefWidth="691.0" styleClass="infor_layout" stylesheets="@../AppCss/studentregistrationpanel.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.StudentRegistrationPanelController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="650.0" opacity="0.26" pickOnBounds="true">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="parent" maxHeight="600.0" maxWidth="650.0" prefHeight="600.0" prefWidth="650.0" style="-fx-border-color: seagreen;">
+         <center>
+            <AnchorPane id="AnchorPane" maxHeight="500.0" maxWidth="650.0" prefHeight="500.0" prefWidth="650.0" stylesheets="@../AppCss/studentregistrationpanel.css">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="798.0">
+                           <children>
+                              <Label fx:id="lbl_schoolname" alignment="CENTER" prefHeight="32.0" prefWidth="790.0" text="MUYEYE VOCATIONAL TRAINNING CENTRE">
+                                 <font>
+                                    <Font name="Bodoni MT" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="798.0">
+                           <children>
+                              <Label fx:id="lbl_boxnumber" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="592.0" text="P.O.BOX 1919-80200">
+                                 <font>
+                                    <Font name="Bodoni MT" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="265.0" prefHeight="182.0" prefWidth="638.0">
+                           <children>
+                              <JFXButton fx:id="btn_start" onAction="#step_one" prefHeight="46.0" prefWidth="275.0" text="Start Registration">
+                                 <font>
+                                    <Font name="Bodoni MT Italic" size="24.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="638.0" spacing="5.0" style="-fx-background-color: skyblue;" styleClass="infor_hbox" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btn_stepone" prefHeight="41.0" prefWidth="110.0" text="Step One" />
+                  <JFXButton fx:id="btn_steptwo" layoutX="280.0" layoutY="27.0" prefHeight="41.0" prefWidth="124.0" text="Step 2" />
+                  <JFXButton fx:id="btn_stepthree" layoutX="328.0" layoutY="27.0" prefHeight="41.0" prefWidth="124.0" text="Step 3" />
+                  <JFXButton fx:id="btn_stepfour" layoutX="389.0" layoutY="27.0" prefHeight="41.0" prefWidth="124.0" text="Step 4" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

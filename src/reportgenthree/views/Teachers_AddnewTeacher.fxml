@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="412.0" prefWidth="366.0" stylesheets="@../AppCss/teachers_addnewteacher.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Teachers_AddnewTeacherController">
+   <children>
+      <AnchorPane maxHeight="400.0" maxWidth="350.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="357.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="338.0">
+                     <children>
+                        <Label prefHeight="29.0" prefWidth="174.0" text="Complete The Form Below">
+                           <font>
+                              <Font name="Bodoni MT" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="121.0" text="Teacher's Full Name:" />
+                        <TextField fx:id="txt_name" prefHeight="35.0" prefWidth="205.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="inforone" contentDisplay="GRAPHIC_ONLY" prefHeight="34.0" prefWidth="22.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="58.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="67.0" text="Id Number:" />
+                        <TextField fx:id="txt_number" prefHeight="35.0" prefWidth="205.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="infor2" contentDisplay="GRAPHIC_ONLY" prefHeight="34.0" prefWidth="22.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="116.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="69.0" text="Department:" />
+                        <ComboBox fx:id="cmb_department" prefHeight="27.0" prefWidth="245.0" promptText="Select Department" />
+                        <Label fx:id="inforone3" contentDisplay="GRAPHIC_ONLY" prefHeight="34.0" prefWidth="22.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="169.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="97.0" text="Teacher's Initials:" />
+                        <TextField fx:id="txt_initials" prefHeight="35.0" prefWidth="205.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="inforone4" contentDisplay="GRAPHIC_ONLY" prefHeight="34.0" prefWidth="22.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="222.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="71.0" text="Assign Task:" />
+                        <ComboBox fx:id="cmb_task" editable="true" prefHeight="27.0" prefWidth="245.0" promptText="Select Task Or No Task" />
+                        <Label fx:id="inforone5" contentDisplay="GRAPHIC_ONLY" prefHeight="34.0" prefWidth="22.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="275.0" prefHeight="48.0" prefWidth="338.0" styleClass="infor_hbox">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="btn_save" mnemonicParsing="false" onAction="#add_teacher" prefHeight="34.0" prefWidth="127.0" text="Add Teacher" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="338.0">
+                     <children>
+                        <JFXButton text="Add Task" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="infor_layout" />
+            <String fx:value="infor_hbox" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</StackPane>

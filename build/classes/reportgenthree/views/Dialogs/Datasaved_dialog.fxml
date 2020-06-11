@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="318.0" prefWidth="387.0" stylesheets="@datasaved_dialog.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Dialogs.Datasaved_dialogController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="310.0" maxWidth="380.0" prefHeight="206.0" prefWidth="232.0" style="-fx-border-color: skyblue;" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@datasaved_dialog.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="232.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="63.0" prefWidth="373.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <Label fx:id="lbl_head" prefHeight="33.0" prefWidth="371.0" text="M.E.R.M.S" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="lbl_icon" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" prefHeight="164.0" prefWidth="241.0" text="Label">
+                     <graphic>
+                        <FontAwesomeIconView fill="#1e70c3" glyphName="THUMBS_UP" size="150.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_infor" alignment="TOP_CENTER" maxWidth="362.0" prefHeight="146.0" prefWidth="362.0" text="Information Saved" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

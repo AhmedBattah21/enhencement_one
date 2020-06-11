@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane stylesheets="@../AppCss/warningbox.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.WarningBoxController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="321.0" prefWidth="449.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/warningbox.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="321.0" prefWidth="449.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="449.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="212.0" text="M.E.R.M.S Security Says">
+                           <font>
+                              <Font name="Bodoni MT" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="171.0" prefWidth="171.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="RED" glyphName="SHIELD" size="180.0" />
+                     </graphic>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="449.0">
+                     <children>
+                        <Label fx:id="lbl_infor" prefHeight="51.0" prefWidth="431.0" text="Sorry Only Admin is permitted to Open This Page, Please Consult Admin" wrapText="true">
+                           <font>
+                              <Font name="Bodoni MT Black" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="449.0">
+                     <children>
+                        <JFXButton fx:id="btn_help" prefHeight="32.0" prefWidth="79.0" text="Help" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Academics_DeleteExamScoreController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="450.0" maxWidth="400.0" prefHeight="450.0" prefWidth="400.0" styleClass="window" stylesheets="@../AppCss/academics_addnewscore.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="400.0" styleClass="topBar" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="TRASH" size="40.0" />
+                        <Label prefHeight="22.0" prefWidth="121.0" text="Exam Records">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="400.0">
+                           <children>
+                              <JFXTextField fx:id="txt_regno" focusColor="ORANGERED" labelFloat="true" onKeyReleased="#SetEnabled" prefHeight="30.0" prefWidth="180.0" promptText="Registration Number" unFocusColor="BLACK">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label fx:id="lbl_infor" prefHeight="31.0" prefWidth="121.0" styleClass="lbl_infor">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="71.0" prefWidth="400.0">
+                           <children>
+                              <JFXTextField fx:id="std_course" focusColor="ORANGERED" labelFloat="true" prefHeight="31.0" prefWidth="298.0" promptText="Student Course">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label fx:id="one" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" styleClass="lbl_infortwo" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="81.0" prefHeight="71.0" prefWidth="400.0" spacing="3.0">
+                           <children>
+                              <JFXComboBox fx:id="cmb_examname" focusColor="ORANGERED" labelFloat="true" prefHeight="30.0" prefWidth="128.0" promptText="Exam Name" />
+                              <Label fx:id="two" contentDisplay="GRAPHIC_ONLY" layoutX="341.0" layoutY="31.0" prefHeight="30.0" styleClass="lbl_infortwo" text="Label" />
+                              <JFXComboBox fx:id="cmb_term" focusColor="ORANGERED" labelFloat="true" layoutX="10.0" layoutY="33.0" prefHeight="30.0" prefWidth="145.0" promptText="Term" />
+                              <Label fx:id="three" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" styleClass="lbl_infortwo" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="81.0" prefHeight="71.0" prefWidth="400.0">
+                           <children>
+                              <JFXComboBox fx:id="cmb_unitname" focusColor="ORANGERED" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="Unit Name" />
+                              <Label fx:id="four" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" styleClass="lbl_infortwo" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="71.0" prefWidth="400.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="btn_addscore" buttonType="RAISED" onAction="#DeleteRecord" prefHeight="40.0" prefWidth="110.0" ripplerFill="#43966c" styleClass="button_one" text="Delete">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TRASH" size="30.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_clearScore" buttonType="RAISED" layoutX="150.0" layoutY="33.0" onAction="#clear" prefHeight="40.0" prefWidth="110.0" ripplerFill="#2dc375" styleClass="button_one" text="Clear">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TIMES" size="30.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox prefHeight="496.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <VBox prefHeight="543.0" prefWidth="28.0" BorderPane.alignment="CENTER" />
+               </left>
+               <bottom>
+                  <HBox prefHeight="43.0" prefWidth="396.0" styleClass="topBar" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

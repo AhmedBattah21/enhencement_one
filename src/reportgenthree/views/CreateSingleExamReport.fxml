@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" prefHeight="385.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.CreateSingleExamReportController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="390.0" maxWidth="360.0" prefHeight="600.0" prefWidth="350.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/createsingleexamreport.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Creating Single Report">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="252.0" prefWidth="348.0" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="338.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <JFXTextField fx:id="txt_regno" maxWidth="195.0" onKeyReleased="#set_name" prefHeight="38.0" prefWidth="195.0" promptText="Registration Number" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" layoutX="15.0" layoutY="15.0" prefHeight="45.0" prefWidth="338.0">
+                                 <children>
+                                    <Label fx:id="lbl_stdname" prefHeight="40.0" prefWidth="333.0" text="Student Name">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="338.0">
+                                 <children>
+                                    <HBox alignment="BASELINE_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <JFXComboBox fx:id="cmb_term" onAction="#set_repotname" prefHeight="40.0" prefWidth="153.0" promptText="Select Term" />
+                                       </children>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <JFXComboBox fx:id="cmb_year" prefHeight="40.0" prefWidth="98.0" promptText="Year" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="65.0" prefHeight="47.0" prefWidth="338.0">
+                                 <children>
+                                    <JFXComboBox fx:id="cmb_stdyear" prefHeight="30.0" prefWidth="153.0" promptText="Student Year" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="167.0" prefHeight="47.0" prefWidth="338.0">
+                                 <children>
+                                    <Label fx:id="lbl_reportname" prefHeight="40.0" prefWidth="333.0" text="Report Form Type">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="49.0" prefWidth="261.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="btn_create" onAction="#create" text="Create" />
+                              <JFXButton fx:id="btn_cancel" layoutX="10.0" layoutY="10.0" text="Cancel" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <HBox prefHeight="18.0" prefWidth="348.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="1.0" right="2.0" top="2.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </AnchorPane>
+   </children>
+</StackPane>

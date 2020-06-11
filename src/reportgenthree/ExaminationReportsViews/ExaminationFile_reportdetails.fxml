@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" onMouseClicked="#get_data" prefHeight="256.0" prefWidth="223.0" styleClass="infor_layout_one" stylesheets="@examinationfile_reportdetails.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationReportsViews.ExaminationFile_reportdetailsController">
+   <children>
+      <Label fx:id="lbl_graphic" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" prefHeight="257.0" prefWidth="223.0" text="Label">
+         <graphic>
+            <FontAwesomeIconView fx:id="background_image" fill="#7d0d82" glyphName="FILE_PDF_ALT" opacity="0.29" size="245.0" strokeLineCap="ROUND" />
+         </graphic>
+      </Label>
+      <AnchorPane id="AnchorPane" maxHeight="245.0" maxWidth="215.0" prefHeight="245.0" prefWidth="215.0" styleClass="infor_layout">
+          <stylesheets>
+              <URL value="@examinationfile_reportdetails.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="185.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="203.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lbl_rname" alignment="CENTER" prefHeight="42.0" prefWidth="204.0" text="996 Report Form" textFill="#141313" wrapText="true">
+                           <font>
+                              <Font name="Arial Narrow" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="203.0">
+                     <children>
+                        <Label fx:id="lbl_stdname" prefHeight="42.0" prefWidth="195.0" text="Sudent Name">
+                           <font>
+                              <Font name="Arial Unicode MS" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="42.0" prefHeight="43.0" prefWidth="203.0">
+                     <children>
+                        <Label fx:id="lbl_coursename" prefHeight="41.0" prefWidth="200.0" text="Course Name" textFill="#030303" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial Unicode MS" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="74.0" prefHeight="40.0" prefWidth="203.0">
+                     <children>
+                        <Label fx:id="lbl_examyear" prefHeight="32.0" prefWidth="200.0" text="Exam Year" textFill="#030303">
+                           <font>
+                              <Font name="Arial Unicode MS" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="171.0" prefHeight="46.0" prefWidth="203.0">
+                     <children>
+                        <Label fx:id="lbl_status" prefHeight="44.0" prefWidth="203.0" text="Status: Incomplete Report (7)" textFill="RED" wrapText="true">
+                           <font>
+                              <Font name="Arial Unicode MS" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="106.0" prefHeight="32.0" prefWidth="166.0">
+                     <children>
+                        <Label fx:id="lbl_stdyear" prefHeight="32.0" prefWidth="186.0" text="Student Year">
+                           <font>
+                              <Font name="Bodoni MT Black Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

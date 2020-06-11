@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="DelPane" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Student_DeleteDataFormController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="520.0" prefWidth="352.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="136.0" prefHeight="49.0" prefWidth="354.0">
+                     <children>
+                        <HBox alignment="CENTER" styleClass="searchBar">
+                           <children>
+                              <JFXTextField fx:id="txt_regno" focusColor="#cccccc" onKeyReleased="#getStudent" prefHeight="31.0" prefWidth="185.0" promptText="Registration Number" styleClass="search_TextBox" unFocusColor="#cccccc">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="3.0" left="15.0" top="3.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="25.0">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="301.0" spacing="5.0">
+                     <children>
+                        <JFXTextField fx:id="txt_fname" editable="false" focusColor="WHITE" labelFloat="true" prefHeight="40.0" prefWidth="140.0" promptText="First Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txt_lname" editable="false" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="180.0" promptText="Last Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="301.0" spacing="5.0">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXComboBox fx:id="cmb_category" labelFloat="true" prefHeight="40.0" prefWidth="180.0" promptText="Student Category" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="73.0" prefHeight="53.0" prefWidth="301.0">
+                     <children>
+                        <JFXComboBox fx:id="cmb_course" labelFloat="true" prefHeight="31.0" prefWidth="346.0" promptText="Student Course" visibleRowCount="5">
+                           <HBox.margin>
+                              <Insets top="8.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="354.0">
+                     <children>
+                        <JFXDatePicker fx:id="dp_date" editable="false" prefHeight="40.0" prefWidth="180.0" promptText="Date Of Registration" showWeekNumbers="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="199.0" prefHeight="142.0" prefWidth="352.0" spacing="5.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Rectangle fx:id="rect_image" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="130.0" stroke="LIGHTGREEN" strokeType="INSIDE" width="130.0">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <VBox alignment="TOP_CENTER" prefHeight="145.0" prefWidth="216.0" spacing="5.0">
+                           <children>
+                              <JFXButton fx:id="btn_chooseImage" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Choose Image">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_useCamera" layoutX="34.0" layoutY="10.0" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Use Default">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label fx:id="lbl_imgname" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="170.0" text="Photo Name">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="64.0" prefWidth="354.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="btn_Cancel" layoutX="10.0" layoutY="10.0" onAction="#delete_confirm" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Delete">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TRASH" size="20.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="546.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="546.0" prefWidth="21.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="16.0" prefWidth="398.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox prefHeight="60.0" prefWidth="398.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView glyphName="TRASH" size="30.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="238.0" text="Remove Student Details">
+                     <font>
+                        <Font name="Bodoni MT Black" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../AppCss/Student_EditDataFormCss.css" />
+      <URL value="@../AppCss/BasicWindows.css" />
+   </stylesheets>
+</AnchorPane>

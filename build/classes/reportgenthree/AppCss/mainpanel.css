@@ -1,0 +1,68 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+   /* -fx-background-image: url("images/1.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;*/
+
+
+}
+
+
+
+
+.top_bar{
+
+    -fx-background-color:skyblue;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: seagreen;
+
+
+}
+
+.icons{
+
+    -fx-fill: seagreen;
+
+}
+
+
+.Button{
+
+
+    -fx-border-color: lightblue;
+
+    -fx-text-fill: blue;
+    -fx-font-size:15;    
+}
+
+
+.Button:hover{
+
+    -fx-background-color:seagreen;
+    -fx-text-fill: white;
+
+}
+
+.Button:hover>.glyph-icon{
+
+    -fx-fill:white;
+
+}
+
+.Button_bar{
+
+    -fx-border-color: deepskyblue;
+    -fx-border-width: 1px;
+
+
+}
+
+.design_bar{
+
+    -fx-background-color: black; 
+
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane styleClass="infor_layout" stylesheets="@reportsearchform.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationReportsViews.ReportSearchFormController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="297.0" prefWidth="433.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@reportsearchform.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="297.0" prefWidth="433.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="52.0" prefWidth="222.0" text="SEARCH REPORT FORM">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="62.0" prefWidth="433.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <TextField fx:id="txt_hint" prefHeight="49.0" prefWidth="336.0" promptText="Enter Adm Number/Student Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="92.0" prefHeight="103.0" prefWidth="423.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="btn_search" mnemonicParsing="false" prefHeight="38.0" prefWidth="103.0" text="Search">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SEARCH" size="25.0" style="-fx-rotate: 90;" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="423.0">
+                     <children>
+                        <Label fx:id="lbl_infor" prefHeight="41.0" prefWidth="422.0" text="Information" wrapText="true">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

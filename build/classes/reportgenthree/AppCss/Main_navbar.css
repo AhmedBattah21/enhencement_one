@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2018, 9:06:30 PM
+    Author     : Computer
+*/
+
+.Basic_Button{
+    
+    -fx-border-color: deepskyblue;
+    -fx-border-width: 0 0 1 0;
+    
+    
+}
+
+
+.Basic_Button:hover{
+    
+    -fx-border-color: green;
+    -fx-cursor: hand;
+    /*-fx-border-width: 2px;*/
+    -fx-background-color: deepskyblue;
+    
+    -fx-text-fill: white;
+    
+}
+
+.Basic_Button:focused{
+    
+    -fx-border-color: green;
+    
+    
+    -fx-text-fill:green;
+    -fx-border-width: 0 0 3 0;
+    
+    
+}
+.Basic_Button:hover>.glyph-icon{
+    
+    
+    -fx-fill: white;
+    
+}
+
+.Basic_Button:focused>.glyph-icon{
+    
+    -fx-fill: green;
+    
+}
+
+

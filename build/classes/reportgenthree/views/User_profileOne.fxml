@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="280.0" prefHeight="628.0" prefWidth="290.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/user_profileone.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.User_profileOneController">
+   <children>
+      <VBox minWidth="285.0" prefHeight="200.0" prefWidth="285.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="260.0" prefWidth="286.0" styleClass="profile_bar">
+               <children>
+                  <Circle fx:id="image_holder" fill="#f5f5f5" radius="100.0" stroke="#e8e4e4" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="178.0" prefWidth="286.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="285.0" text="My Details" textFill="#1128bf">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_fullname" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="285.0" text="Name : Mr Katana Menza" textFill="#a11958">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_dept" layoutX="10.0" layoutY="41.0" prefHeight="31.0" prefWidth="285.0" text="I.C.T Department" textFill="#a11958">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_mainask" layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="285.0" text="FootBall Teacher" textFill="#a11958">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="121.0" prefHeight="31.0" prefWidth="285.0" text="First Year: Class Teacher" textFill="#a11958">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="270.0" prefHeight="160.0" prefWidth="286.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="328.0" text="Other Links" textFill="#1128bf">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </Label>
+                        <JFXButton onAction="#view_myclasses" prefHeight="37.0" prefWidth="283.0" text="View My Classes">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic></JFXButton>
+                        <JFXButton layoutX="13.0" layoutY="49.0" onAction="#view_myclasses" prefHeight="37.0" prefWidth="283.0" text="Reminders">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

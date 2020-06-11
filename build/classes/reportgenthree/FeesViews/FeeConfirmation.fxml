@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.FeesViews.FeeConfirmationController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="265.0" maxWidth="450.0" prefHeight="265.0" prefWidth="450.0" style="-fx-border-color: skyblue;" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@feeconfirmation.css" />
+          </stylesheets>
+         <children>
+            <VBox prefHeight="265.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="450.0" style="-fx-background-color: skyblue;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lbl_title" prefHeight="28.0" prefWidth="446.0" text="Payment Name">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="171.0" prefWidth="450.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lbl_infor" prefHeight="168.0" prefWidth="446.0" text="Payment Name" wrapText="true">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="450.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btn_save" prefHeight="35.0" prefWidth="206.0" text="Confirm and Save" />
+                        <JFXButton fx:id="btn_cancel" layoutX="10.0" layoutY="17.0" prefHeight="35.0" prefWidth="206.0" text="Cancel Payment" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

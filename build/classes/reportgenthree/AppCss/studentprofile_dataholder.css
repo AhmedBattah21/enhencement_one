@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.links_button{
+    
+   -fx-background-color: lightgray;
+   -fx-border-color: skyblue;
+   -fx-border-radius: 3 3 3 3;
+   -fx-background-radius: 3 3 3 3;
+    
+}

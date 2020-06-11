@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+    -fx-background-color: lightblue;
+}
+
+.topBar{
+    
+    -fx-background-color: seagreen;
+}

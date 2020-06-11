@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="468.0" prefWidth="360.0" stylesheets="@../AppCss/studentregistration_stepone.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.StudentRegistration_stepthreeController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="450.0" maxWidth="370.0" prefHeight="450.0" prefWidth="370.0" styleClass="infor_layout">
+          <stylesheets>
+              <URL value="@/reportgenthree/AppCss/studentregistration_stepone.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="367.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="337.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="221.0" text="Complete Final Step To Save Data">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lbl_imagename" alignment="CENTER" prefHeight="17.0" prefWidth="334.0" text="Default Student Image">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="165.0" prefHeight="179.0" prefWidth="337.0">
+                     <children>
+                        <Rectangle fx:id="rect_image" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="179.0" stroke="LIGHTGRAY" strokeType="INSIDE" width="187.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="61.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Button fx:id="btn_default" mnemonicParsing="false" prefHeight="35.0" prefWidth="85.0" text="Default">
+                           <font>
+                              <Font name="Bodoni MT" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_new" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="85.0" text="New">
+                           <font>
+                              <Font name="Bodoni MT" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_browse" layoutX="179.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="85.0" text="Browse">
+                           <font>
+                              <Font name="Bodoni MT" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="352.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <JFXDatePicker fx:id="dp_date" prefHeight="27.0" prefWidth="160.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="299.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Button fx:id="btn_nextthree" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="74.0" text="Save">
+                           <font>
+                              <Font name="Bodoni MT" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

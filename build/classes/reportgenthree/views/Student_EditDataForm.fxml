@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" prefHeight="389.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Student_EditDataFormController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="390.0" maxWidth="400.0" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox prefHeight="520.0" prefWidth="352.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" spacing="5.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" styleClass="infor_hbox">
+                                 <children>
+                                    <TextField fx:id="txt_fname" promptText="First Name" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="infor_hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="txt_lname" prefHeight="27.0" prefWidth="228.0" promptText="Last Names" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="301.0" spacing="5.0" styleClass="infor_hbox">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <ComboBox fx:id="cmb_category" prefHeight="33.0" prefWidth="257.0" promptText="Student Category" />
+                              <ComboBox fx:id="cmb_gender" layoutX="10.0" layoutY="16.0" prefHeight="33.0" prefWidth="119.0" promptText="Gender" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="144.0" prefHeight="40.0" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" styleClass="infor_hbox">
+                                 <children>
+                                    <ComboBox fx:id="cmb_yearofstudy" prefHeight="33.0" prefWidth="215.0" promptText="Student Year" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="73.0" prefHeight="40.0" styleClass="infor_hbox">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <ComboBox fx:id="cmb_course" prefHeight="33.0" prefWidth="382.0" promptText="Student Year" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" styleClass="infor_hbox">
+                           <children>
+                              <JFXDatePicker fx:id="dp_date" prefHeight="40.0" prefWidth="180.0" promptText="Month / Day /Year" showWeekNumbers="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="354.0" spacing="5.0">
+                           <children>
+                              <JFXButton fx:id="btn_register" onAction="#saveData" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Save">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SAVE" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_Cancel" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Cancel">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="TRASH" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="398.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="PENCIL" size="30.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="198.0" text="Edit Student Details">
+                           <font>
+                              <Font name="Bodoni MT Black" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+         <stylesheets>
+            <URL value="@../AppCss/student_registrationform.css" />
+            <URL value="@../AppCss/Student_EditDataFormCss.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="502.0" prefWidth="399.0" style="-fx-border-color: seagreen; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.RecordsUpdaterController">
+   <children>
+      <BorderPane>
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+                <stylesheets>
+                    <URL value="@/reportgenthree/AppCss/recordsupdater.css" />
+                </stylesheets>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="399.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="225.0" text="Students Details/Records">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btn_updatestdetails" onAction="#startTaskOne" prefHeight="36.0" prefWidth="154.0" text="Update Records" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="75.0" prefHeight="27.0" prefWidth="399.0">
+                           <children>
+                              <JFXProgressBar fx:id="processor_one" prefHeight="5.0" prefWidth="250.0" />
+                              <Label fx:id="lbl_one" prefHeight="20.0" prefWidth="145.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="75.0" prefHeight="65.0" prefWidth="399.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="242.0" text="Students Examination Records">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btn_updateexams" onAction="#startTaskTwo" prefHeight="36.0" prefWidth="142.0" text="Update Records" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="140.0" prefHeight="27.0" prefWidth="399.0">
+                           <children>
+                              <JFXProgressBar fx:id="processor_two" prefHeight="5.0" prefWidth="250.0" />
+                              <Label fx:id="lbl_two" prefHeight="20.0" prefWidth="145.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="197.0" prefHeight="65.0" prefWidth="399.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="242.0" text="Students Fee Records">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btn_updatefee" onAction="#startTaskThree" prefHeight="36.0" prefWidth="142.0" text="Update Records" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="272.0" prefHeight="27.0" prefWidth="399.0">
+                           <children>
+                              <JFXProgressBar fx:id="processor_three" prefHeight="5.0" prefWidth="250.0" />
+                              <Label fx:id="lbl_three" prefHeight="20.0" prefWidth="145.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="219.0" prefHeight="54.0" prefWidth="385.0">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="242.0" text="System Records">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="btn_systemrecords" onAction="#startTaskThree" prefHeight="36.0" prefWidth="142.0" text="Update Records" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="279.0" prefHeight="27.0" prefWidth="399.0">
+                           <children>
+                              <JFXProgressBar fx:id="processor_four" prefHeight="5.0" prefWidth="250.0" />
+                              <Label fx:id="lbl_three1" prefHeight="20.0" prefWidth="145.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="309.0" prefHeight="49.0" prefWidth="385.0">
+                           <children>
+                              <JFXButton fx:id="btn_close" onAction="#close" prefHeight="36.0" prefWidth="387.0" text="Clear and Close" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="399.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="180.0" text="Select Fields To Update">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="24.0" prefWidth="395.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

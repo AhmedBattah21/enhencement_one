@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="350.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/loginscreen.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.LoginscreenController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="400.0" styleClass="topBar">
+               <children>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="50.0" />
+                  <Label fx:id="lbl_infor" prefHeight="34.0" prefWidth="235.0" text="Sorry Wrong Password!!" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="64.0" prefWidth="400.0" spacing="5.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" size="30.0" />
+                  <JFXComboBox fx:id="cmb_group" focusColor="WHITE" labelFloat="true" onKeyReleased="#keylistener_group" prefHeight="30.0" prefWidth="195.0" promptText="Group" unFocusColor="BLACK" />
+                  <Label fx:id="lbl_group" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" text="Label">
+                     <graphic>
+                        <FontAwesomeIconView fill="RED" glyphName="WARNING" size="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="64.0" prefWidth="400.0" spacing="5.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" size="30.0" />
+                  <JFXTextField fx:id="txt_name" focusColor="WHITE" labelFloat="true" onKeyReleased="#keylistener_username" prefHeight="30.0" prefWidth="195.0" promptText="User Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="lbl_name" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" text="Label">
+                     <graphic>
+                        <FontAwesomeIconView fill="RED" glyphName="WARNING" size="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="74.0" prefHeight="64.0" prefWidth="400.0" spacing="5.0">
+               <children>
+                  <FontAwesomeIconView glyphName="KEY" size="30.0" />
+                  <JFXPasswordField fx:id="txt_pass" focusColor="WHITE" labelFloat="true" onKeyReleased="#keylistener_pass" prefHeight="30.0" prefWidth="195.0" promptText="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label fx:id="lbl_pass" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" text="Label">
+                     <graphic>
+                        <FontAwesomeIconView fill="RED" glyphName="WARNING" size="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="64.0" prefWidth="400.0" spacing="5.0">
+               <children>
+                  <JFXButton fx:id="btn_login" onAction="#login" prefHeight="40.0" prefWidth="250.0" text="Log In" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="266.0" prefHeight="64.0" prefWidth="400.0" spacing="5.0">
+               <children>
+                  <JFXButton fx:id="btn_fgpass" prefHeight="40.0" prefWidth="150.0" text="Forgot Password" />
+                  <JFXButton fx:id="btn_createacc" layoutX="111.0" layoutY="23.0" prefHeight="40.0" prefWidth="150.0" text="Create Account" />
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="400.0" styleClass="topBar" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

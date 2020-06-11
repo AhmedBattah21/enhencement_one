@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="350.0" style="-fx-border-color: green;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.ProcessCompleteMultipleEndStageController">
+    <stylesheets>
+        <URL value="@/reportgenthree/AppCss/processcompletemultiplereports.css" />
+    </stylesheets>
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIconView fill="GREEN" glyphName="EXCLAMATION_CIRCLE" size="200.0" />
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="400.0">
+                     <children>
+                        <Label text="Transcripts Have Been Created">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="214.0" prefHeight="56.0" prefWidth="400.0">
+                     <children>
+                        <Label fx:id="lbl_numberofreports" prefHeight="27.0" prefWidth="283.0" text="Nuber Of Reports: 20">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btn_openfolder" onAction="#OpenFolder" prefHeight="25.0" prefWidth="54.0" text="View " />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="270.0" prefHeight="56.0" prefWidth="400.0">
+                     <children>
+                        <Label fx:id="lbl_missingmarks" layoutX="10.0" layoutY="25.0" prefHeight="27.0" prefWidth="240.0" text="Students With Missing Marks: 30">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btn_view" prefHeight="25.0" prefWidth="82.0" text="View " />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="326.0" prefHeight="56.0" prefWidth="400.0">
+                     <children>
+                        <JFXButton fx:id="btn_marge" buttonType="RAISED" layoutX="10.0" layoutY="26.0" onAction="#openDoc" prefHeight="35.0" prefWidth="335.0" text="Marge and Open Document">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="382.0" prefHeight="56.0" prefWidth="400.0">
+                     <children>
+                        <JFXButton fx:id="btn_exit" layoutX="10.0" layoutY="26.0" onAction="#close" prefHeight="35.0" prefWidth="335.0" text="Close and Exit">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <HBox prefHeight="27.0" prefWidth="400.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

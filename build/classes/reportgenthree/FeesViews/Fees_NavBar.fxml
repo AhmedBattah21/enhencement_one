@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="navbar" minWidth="160.0" prefHeight="600.0" prefWidth="160.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.FeesViews.Fees_NavBarController">
+    <stylesheets>
+        <URL value="@../AppCss/Basic_NavBar_Style.css" />
+      <URL value="@../AppCss/accounts_navbar.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="120.0" styleClass="bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="160.0" text="Fee Manager" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_newfaccount" onAction="#createAccountType" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Fee Account" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_PLUS" size="25.0" styleClass="glyph-icon" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_createfaccount" layoutX="10.0" layoutY="10.0" onAction="#createStudentAccount" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Create Fee Account" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SHIRTSINBULK" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_payfees" layoutX="10.0" layoutY="70.0" onAction="#PayFees" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="     Pay School Fees" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MONEY" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_payfees1" layoutX="10.0" layoutY="143.0" onAction="#otherPayments" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Other Payments" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MONEY" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_stdaccount" layoutX="10.0" layoutY="310.0" onAction="#StudentFeestatements" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Student Fee Account" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <OctIconView glyphName="ORGANIZATION" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_checkbalances" layoutX="10.0" layoutY="220.0" onAction="#StudentFeebalances" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Check Fee Balances" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FILE_PDF_ALT" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_booklet" layoutX="10.0" layoutY="280.0" onAction="#FeesBooklet" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Fee Statements Booklet" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LEANPUB" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_createfaccount1" layoutX="10.0" layoutY="100.0" onAction="#Add_Program" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Program" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SHIRTSINBULK" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_createfaccount11" layoutX="10.0" layoutY="400.0" onAction="#available_programs" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="View Programs" wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SHIRTSINBULK" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <StackPane fx:id="mypane" prefHeight="150.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

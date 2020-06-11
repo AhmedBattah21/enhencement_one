@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.User_userprofilepageController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/user_userprofilepage.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="600.0" styleClass="topBar" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lbldate" prefHeight="35.0" prefWidth="191.0" text="Date :12/12/2018 ">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CALENDAR" size="25.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_group" layoutX="200.0" layoutY="23.0" maxWidth="250.0" prefHeight="35.0" prefWidth="209.0" text="Administrator">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView glyphName="ACCOUNT_MULTIPLE" size="25.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="lbl_username" layoutX="169.0" layoutY="23.0" maxWidth="250.0" prefHeight="53.0" prefWidth="237.0" text="Erick Yaah" wrapText="true" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Bodoni MT" size="17.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="25.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="223.0" prefWidth="495.0">
+                           <children>
+                              <StackPane prefHeight="209.0" prefWidth="200.0">
+                                 <children>
+                                    <Circle fx:id="imgcircle" fill="WHITE" radius="100.0" stroke="SEAGREEN" strokeType="INSIDE" />
+                                    <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="32.0" prefWidth="43.0" text="Change" StackPane.alignment="BOTTOM_RIGHT">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="SEAGREEN" glyphName="CAMERA" size="20.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="85.0" prefWidth="495.0">
+                           <children>
+                              <JFXButton fx:id="btn_files1" buttonType="RAISED" layoutX="110.0" layoutY="23.0" onAction="#openFileSystem_1st" prefHeight="60.0" prefWidth="130.0" text="Academic Report Forms (1st Years)" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a42e41" glyphName="FILE_PDF_ALT" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_files" buttonType="RAISED" onAction="#openFileSystem_2nd" prefHeight="60.0" prefWidth="130.0" text="Academic Report Forms (2nd Years)" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#2f93a3" glyphName="FILE_PDF_ALT" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="205.0" layoutY="57.0" onAction="#examinationfiles_fstyear" prefHeight="60.0" prefWidth="130.0" text="Examination Files(1st Year)" textAlignment="CENTER" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a42e41" glyphName="FILE_TEXT_ALT" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="23.0" onAction="#examinationfiles_secondyear" prefHeight="60.0" prefWidth="130.0" text="Examination Files(2nd Year)" textAlignment="CENTER" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#2f93a3" glyphName="FILE_TEXT_ALT" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="15.0" layoutY="262.0" prefHeight="85.0" prefWidth="495.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" onAction="#reportMakerS" prefHeight="60.0" prefWidth="130.0" text="Report Maker" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="GREEN" glyphName="FILE_WORD_ALT" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="205.0" layoutY="57.0" onAction="#reportMakerM" prefHeight="60.0" prefWidth="130.0" text="Multiple Report Maker" textAlignment="CENTER" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="GREEN" glyphName="TH_LIST" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="263.0" layoutY="57.0" onAction="#FindResults" prefHeight="60.0" prefWidth="130.0" text="Student Exam Files" textAlignment="CENTER" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="GREEN" glyphName="BINOCULARS" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" onAction="#openStudentsFinder" prefHeight="60.0" prefWidth="130.0" text="Students Details Finder" textAlignment="CENTER" wrapText="true">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="GREEN" glyphName="BINOCULARS" size="30.0" />
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="14.45" spread="0.05" width="23.97" />
+                                 </effect>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="370.0" onMouseClicked="#open_examinations" prefHeight="405.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationViews.ExaminationFile_percourseController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="390.0" maxWidth="290.0" prefHeight="390.0" prefWidth="290.0" styleClass="infor_layout">
+          <stylesheets>
+              <URL value="@examinationfile_percourse.css" />
+          </stylesheets>
+         <children>
+            <VBox layoutX="12.0" layoutY="12.0" prefHeight="331.0" prefWidth="268.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="lbl_course" prefHeight="82.0" prefWidth="278.0" text="Course Name" textFill="#d71212" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#c61227" glyphName="PAPERCLIP" size="30.0" style="-fx-rotate: 45;" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_stdyear" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="263.0" text="First Year" textFill="#244fb2" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow Italic" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_term" layoutX="10.0" layoutY="76.0" prefHeight="27.0" prefWidth="265.0" text="Term One" textFill="#4210e8" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_examyear" layoutX="10.0" layoutY="103.0" prefHeight="27.0" prefWidth="264.0" text="Exam For 2018" textFill="#d419da" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="130.0" prefHeight="175.0" prefWidth="263.0" text="Exam For 2018" textFill="#d419da" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#081880" glyphName="FOLDER_ALT" size="150.0" wrappingWidth="128.57142639160156" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="130.0" prefHeight="15.0" prefWidth="248.0" text="end of exam file" textFill="#d419da" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

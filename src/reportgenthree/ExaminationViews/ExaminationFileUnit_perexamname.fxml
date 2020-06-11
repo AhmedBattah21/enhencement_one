@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane onMouseClicked="#opentable" prefHeight="418.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationViews.ExaminationFileUnit_perexamnameController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="402.0" maxWidth="275.0" prefHeight="402.0" prefWidth="275.0" styleClass="infor_layout">
+          <stylesheets>
+              <URL value="@examinationfileunit_perexamname.css" />
+          </stylesheets>
+         <children>
+            <VBox prefHeight="364.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="lbl_unitname" prefHeight="56.0" prefWidth="264.0" text="Communication Skills" textFill="#1924a1" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PAPERCLIP" size="25.0" style="-fx-rotate: 45;" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_coursename" prefHeight="27.0" prefWidth="263.0" text="Course Name" textFill="#cf1139" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_stdyear" prefHeight="30.0" prefWidth="261.0" text=" First Year Examination Score Sheet" textFill="#bf1717" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_term" prefHeight="34.0" prefWidth="262.0" text="Term One Examination" textFill="#1abf54" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_examname" layoutX="10.0" layoutY="137.0" prefHeight="34.0" prefWidth="262.0" text="Mid Term Examination" textFill="#1abf54" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_examyear" prefHeight="34.0" prefWidth="263.0" text="Examination For 2018" textFill="#cf1139" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="15.0" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="195.0" prefHeight="166.0" prefWidth="263.0" text="Examination For 2018" textFill="#cf1139" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="LIST_UL" size="150.0" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="195.0" prefHeight="34.0" prefWidth="263.0" text="End Of Examination File" textFill="#cf1139" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

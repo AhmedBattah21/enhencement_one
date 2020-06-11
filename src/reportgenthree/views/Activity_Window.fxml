@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Activity_WindowController">
+    <stylesheets>
+        <URL value="@/reportgenthree/AppCss/activity_window.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="container" alignment="TOP_CENTER" prefHeight="520.0" prefWidth="395.0" spacing="15.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </center>
+         <bottom>
+            <HBox prefHeight="16.0" prefWidth="398.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="398.0" style="-fx-background-color: seagreen;">
+                     <children>
+                        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                           <children>
+                              <FontAwesomeIconView glyphName="TACHOMETER" size="30.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="154.0" text="ACTIVITIES">
+                                 <font>
+                                    <Font name="Bodoni MT Black" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="400.0" spacing="3.0" style="-fx-border-color: lightgray;">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="87.0" text="Search Activity:" />
+                        <TextField fx:id="txt_hint" onKeyReleased="#check_activity" prefHeight="32.0" prefWidth="224.0" promptText="Enter Hint" style="-fx-border-color: white; -fx-background-color: white;" />
+                        <Button fx:id="btn_search" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#search_activity" style="-fx-background-color: transparent;" text="Button">
+                           <graphic>
+                              <FontAwesomeIconView fill="LIGHTGRAY" glyphName="SEARCH" size="20.0" />
+                           </graphic>
+                        </Button>
+                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#add_activities" prefHeight="34.0" prefWidth="27.0" style="-fx-background-color: transparent;" text="Rfresh">
+                           <graphic>
+                              <FontAwesomeIconView fill="LIGHTGRAY" glyphName="REFRESH" size="20.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

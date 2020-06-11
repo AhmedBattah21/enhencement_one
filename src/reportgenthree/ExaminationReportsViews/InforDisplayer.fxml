@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="372.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationReportsViews.InforDisplayerController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="359.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@infordisplayer.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="CENTER" prefHeight="333.0" prefWidth="359.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="lbl_iconholder" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" prefHeight="234.0" prefWidth="279.0" text="Label">
+                     <graphic>
+                        <FontAwesomeIconView fill="#247ea1" glyphName="CHECK" size="250.0" wrappingWidth="269.0" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lbl_infor" alignment="CENTER" prefHeight="88.0" prefWidth="340.0" text="successfull!!!" textFill="#054172" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btn_allpurpose" prefHeight="25.0" prefWidth="119.0" text="View" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

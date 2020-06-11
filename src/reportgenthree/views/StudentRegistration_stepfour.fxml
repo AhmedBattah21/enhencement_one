@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" prefHeight="515.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.StudentRegistration_stepfourController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="503.0" maxWidth="449.0" prefHeight="503.0" prefWidth="449.0" styleClass="infor_layout" stylesheets="@../AppCss/studentregistration_stepfour.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="367.0" spacing="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="337.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="221.0" text="Check/Confirm &amp; Save">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="384.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0">
+                     <children>
+                        <Rectangle fx:id="rect_image" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="170.0" stroke="LIGHTGRAY" strokeType="INSIDE" width="170.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="61.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lbl_names" prefHeight="34.0" prefWidth="161.0" text="Full Names">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_names1" layoutX="115.0" layoutY="17.0" prefHeight="34.0" prefWidth="262.0" text="Full Names">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="61.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Label fx:id="lbl_course" prefHeight="34.0" prefWidth="380.0" text="Student Course">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Label fx:id="lbl_stdyear" prefHeight="37.0" prefWidth="179.0" text="First Year">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_category" layoutX="103.0" layoutY="16.0" prefHeight="37.0" prefWidth="227.0" text="Full Time">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="52.0" prefWidth="337.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Label fx:id="lbl_gender" prefHeight="38.0" prefWidth="193.0" text="Gender">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_adm" layoutX="138.0" layoutY="16.0" prefHeight="40.0" prefWidth="152.0" text="CCCODE/REGCODE">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="262.0" prefHeight="40.0" prefWidth="338.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Label fx:id="lbl_date" layoutX="138.0" layoutY="16.0" prefHeight="30.0" prefWidth="244.0" text="Registration Date">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="299.0" prefHeight="41.0" prefWidth="368.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="btn_save" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" text="Save">
+                           <font>
+                              <Font name="Bodoni MT" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

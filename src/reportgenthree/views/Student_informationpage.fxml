@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="632.0" prefWidth="694.0" styleClass="infor_layout" stylesheets="@../AppCss/student_informationpage.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Student_informationpageController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="625.0" opacity="0.11" pickOnBounds="true" StackPane.alignment="CENTER">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" maxHeight="635.0" maxWidth="690.0" prefHeight="622.0" prefWidth="678.0" styleClass="infor_hbox">
+         <children>
+            <VBox prefHeight="582.0" prefWidth="620.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="43.0" prefWidth="620.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="483.0" text="MUYEYE VOCATIONAL TRAINNING CENTRE">
+                           <font>
+                              <Font name="Footlight MT Light" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="620.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="322.0" text="STUDENT INFORMATION">
+                           <font>
+                              <Font name="Footlight MT Light" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Std_year" alignment="CENTER" layoutX="158.0" layoutY="16.0" prefHeight="30.0" prefWidth="106.0" text="FIRST YEAR">
+                           <font>
+                              <Font name="Footlight MT Light" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="17.0" prefWidth="132.0" text="Personal Information" textFill="#c31e1e">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="115.0" prefWidth="620.0" styleClass="infor_hbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="115.0" prefWidth="621.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="110.0" text="Student Full Names:" />
+                                    <Label fx:id="Std_name" layoutX="10.0" layoutY="20.0" prefHeight="20.0" prefWidth="328.0" text="Katana Michael Kithi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="111.0" text="Admission Number:" />
+                                    <Label fx:id="Adm_number" layoutX="344.0" layoutY="20.0" prefHeight="17.0" prefWidth="114.0" text="CBT/1024" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="54.0" text="Course:" />
+                                    <Label fx:id="Std_course" layoutX="10.0" layoutY="20.0" maxWidth="330.0" prefHeight="23.0" prefWidth="320.0" text="Electrical and Electronics" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="41.0" text="ID NO:" />
+                                    <Label layoutX="344.0" layoutY="20.0" prefHeight="23.0" prefWidth="80.0" text="*********" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="302.0" layoutY="20.0" prefHeight="17.0" prefWidth="43.0" text="D.O.B:" />
+                                    <Label layoutX="368.0" layoutY="17.0" prefHeight="23.0" prefWidth="97.0" text="**/**/*****" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="87.0" text="Home Adress:" />
+                                    <Label layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="156.0" text="1919-200 Malindi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="57.0" text="Religion:" />
+                                    <Label layoutX="344.0" layoutY="20.0" prefHeight="17.0" prefWidth="114.0" text="*********" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="285.0" layoutY="20.0" prefHeight="17.0" prefWidth="64.0" text="Category:" />
+                                    <Label fx:id="Std_category" layoutX="347.0" layoutY="17.0" maxWidth="250.0" prefHeight="23.0" prefWidth="220.0" text="*********" textFill="#2613b5" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="96.0" prefHeight="17.0" prefWidth="158.0" text="Parent/Gurdian Information" textFill="#c31e1e">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="113.0" prefHeight="146.0" prefWidth="620.0" styleClass="infor_hbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="115.0" prefWidth="621.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="154.0" text="Parent/Gurdian Full Names:" />
+                                    <Label layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="423.0" text="Katana Michael Kithi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="44.0" text="ID NO:" />
+                                    <Label layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="100.0" text="316 714 87" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="114.0" text="Telephone Number:" />
+                                    <Label layoutX="344.0" layoutY="20.0" prefHeight="23.0" prefWidth="326.0" text="07 *********" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="101.0" text="Residential Area:" />
+                                    <Label layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="215.0" text="Bahati Estate Malindi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="89.0" text="Occupation:" />
+                                    <Label layoutX="344.0" layoutY="20.0" prefHeight="23.0" prefWidth="210.0" text="*********" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="82.0" prefHeight="36.0" prefWidth="621.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="66.0" text="Address:" />
+                                    <Label layoutX="10.0" layoutY="20.0" prefHeight="23.0" prefWidth="195.0" text="401-80200 Malindi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="120.0" layoutY="20.0" prefHeight="17.0" prefWidth="58.0" text="Town:" />
+                                    <Label layoutX="344.0" layoutY="20.0" prefHeight="23.0" prefWidth="152.0" text="Malindi" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="281.0" layoutY="19.0" prefHeight="17.0" prefWidth="44.0" text="Date:" />
+                                    <Label fx:id="Std_dor" layoutX="344.0" layoutY="16.0" prefHeight="23.0" prefWidth="152.0" text="**/**/****" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="13.0" layoutY="251.0" prefHeight="17.0" prefWidth="222.0" text="Academic Information/Fee Information" textFill="#c31e1e">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="13.0" layoutY="273.0" prefHeight="146.0" prefWidth="620.0" styleClass="infor_hbox">
+                     <children>
+                        <VBox prefHeight="141.0" prefWidth="207.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="230.0" text="First Year Records" />
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term One: " />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="27.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Two:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="53.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Three:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="11.0" layoutY="11.0" prefHeight="141.0" prefWidth="207.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="230.0" text="Second Year Records" />
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term One: " />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="27.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Two:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="53.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Three:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Distinction" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="218.0" layoutY="11.0" prefHeight="141.0" prefWidth="207.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="230.0" text="Fee Records" />
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="122.0" text="Term One Fees:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Kshs. 3400" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="27.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Two:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Kshs. 4500" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="53.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="79.0" text="Term Three:" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="151.0" text="Kshs. 500" textFill="#2613b5">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

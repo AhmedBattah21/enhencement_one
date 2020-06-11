@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="navbar" minWidth="160.0" prefHeight="600.0" prefWidth="160.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Accounts_NavBarController">
+    <stylesheets>
+        <URL value="@../AppCss/Basic_NavBar_Style.css" />
+      <URL value="@../AppCss/accounts_navbar.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="120.0" styleClass="bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="160.0" text="User Account" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton onAction="#openUserProfile" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="User Profile">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="25.0" styleClass="glyph-icon" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_edit" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Edit Infor">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EDIT" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="70.0" onAction="#AddNewUser" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Users">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_PLUS" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="130.0" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Group">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USERS" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="190.0" onAction="#AddNewCourses" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Course">
+               <graphic>
+                  <MaterialDesignIconView glyphName="CONTENT_PASTE" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="250.0" onAction="#AddNewUnit" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Unit">
+               <graphic>
+                  <OctIconView glyphName="DIFF" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="310.0" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Exam">
+               <graphic>
+                  <OctIconView glyphName="BOOK" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_techers" layoutX="10.0" layoutY="400.0" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Teachers">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USERS" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <StackPane fx:id="mypane" prefHeight="150.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

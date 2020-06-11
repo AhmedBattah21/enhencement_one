@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="385.0" style="-fx-border-color: seagreen; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Accounts_addNewCourseController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="363.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="282.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="206.0" text="Courses Offered..">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="61.0" prefWidth="266.0">
+                     <children>
+                        <JFXTextField fx:id="txt_cname" labelFloat="true" prefHeight="38.0" prefWidth="330.0" promptText="Couse Module " HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <JFXTextField fx:id="txt_abriviation" labelFloat="true" prefHeight="38.0" prefWidth="165.0" promptText="Couse Abriviation" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txt_units" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="32.0" prefHeight="38.0" prefWidth="116.0" promptText="Number Of Units">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="266.0" spacing="2.0">
+                     <children>
+                        <JFXButton fx:id="btn_addcourse" onAction="#addCourse" prefHeight="35.0" prefWidth="93.0" text="Add Course" />
+                        <JFXButton fx:id="btn_remove" layoutX="97.0" layoutY="20.0" onAction="#remove" prefHeight="35.0" prefWidth="114.0" text="Remove Course" />
+                        <JFXButton fx:id="btn_addcourse1" layoutX="78.0" layoutY="20.0" onAction="#edit_numunits" prefHeight="35.0" prefWidth="114.0" text="Edit Num Units" />
+                     </children>
+                  </HBox>
+                  <TableView fx:id="table" prefHeight="200.0" prefWidth="266.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="column_id" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="Course Id" />
+                      <TableColumn fx:id="column_cname" prefWidth="75.0" text="Course Name" />
+                        <TableColumn fx:id="column_units" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Units " />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="380.0" prefWidth="15.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="380.0" prefWidth="14.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="36.0" prefWidth="363.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

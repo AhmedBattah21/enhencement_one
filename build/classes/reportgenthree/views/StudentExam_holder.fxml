@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="330.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.StudentExam_holderController">
+   <children>
+      <StackPane prefHeight="330.0" prefWidth="400.0" stylesheets="@../AppCss/studentexam_holder.css">
+         <children>
+            <VBox maxHeight="309.0" maxWidth="290.0" onMouseClicked="#ExamDetails" prefHeight="309.0" prefWidth="290.0" spacing="2.0" styleClass="infor_layout">
+               <children>
+                  <Label fx:id="exam_term" prefHeight="45.0" prefWidth="278.0" text="End Term One Exam" textFill="BLUE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_examname" layoutX="16.0" layoutY="285.0" prefHeight="23.0" prefWidth="283.0" text="End Of File" textFill="#0718d0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Exam_Year" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="211.0" text="Year 2018" textFill="BLUE" />
+                  <Label fx:id="number_units" layoutX="10.0" layoutY="45.0" prefHeight="35.0" prefWidth="203.0" text="5 Units" textFill="GREEN" />
+                  <Label fx:id="grade" layoutX="16.0" layoutY="70.0" prefHeight="35.0" prefWidth="203.0" text="Mean Grade" textFill="#941a59" />
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ExamDetails" prefHeight="141.0" prefWidth="285.0" ripplerFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BOOK" size="130.0" />
+                     </graphic>
+                  </JFXButton>
+                  <Label fx:id="lbl_endfile" layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="203.0" text="End Of File" />
+               </children>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

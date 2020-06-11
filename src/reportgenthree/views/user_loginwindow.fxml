@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.User_loginwindowController">
+   <center>
+      <StackPane fx:id="mypane">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/user_loginwindow.css">
+               <children>
+                  <BorderPane fx:id="layout" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="68.0" prefWidth="800.0" styleClass="topBar" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="344.0" text="M.E.R.M.S" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font name="Lucida Calligraphy Italic" size="43.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow choke="0.08" height="44.72" radius="10.68" width="0.0" />
+                                 </effect>
+                              </Label>
+                           </children>
+                           <effect>
+                              <Reflection bottomOpacity="0.4" fraction="0.77" topOpacity="0.32" />
+                           </effect>
+                        </HBox>
+                     </top>
+                     <center>
+                        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="237.0" prefWidth="611.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="162.0" layoutY="239.0" spacing="10.0" styleClass="centerBar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Circle fx:id="circle" fill="WHITE" radius="100.0" stroke="SEAGREEN" strokeType="INSIDE" />
+                                          <HBox alignment="CENTER" prefHeight="213.0" prefWidth="800.0" spacing="10.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="220.0" prefWidth="260.0" spacing="5.0" styleClass="bar">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="228.0" style="-fx-background-color: brown;" text="Log in if you have an Account" textFill="WHITE" />
+                                                      <JFXButton fx:id="btn_login" alignment="CENTER" buttonType="RAISED" onAction="#login" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: seagreen;" text="Log In" textFill="WHITE">
+                                                         <graphic>
+                                                            <FontAwesomeIconView glyphName="USER" size="30.0" />
+                                                         </graphic>
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="220.0" prefWidth="260.0" spacing="5.0" styleClass="bar">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="228.0" style="-fx-background-color: brown;" text="Click To Create Account.." textFill="WHITE" />
+                                                      <JFXButton fx:id="btn_createAccount" alignment="CENTER" buttonType="RAISED" onAction="#Sign_up" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: seagreen;" text="Create Account" textFill="WHITE">
+                                                         <graphic>
+                                                            <FontAwesomeIconView glyphName="USER_PLUS" size="30.0" />
+                                                         </graphic>
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </JFXButton>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER_LEFT" prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="96.0" prefWidth="454.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="263.0" text="www.developerwebsite.com" textFill="WHITE" underline="true" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="GLOBE" size="20.0" />
+                                       </graphic>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="50.0" prefHeight="32.0" prefWidth="328.0" text="developeremail@gmail.com" textFill="WHITE" underline="true" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE" size="20.0" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="96.0" prefWidth="312.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="183.0" text=" production Year" textFill="WHITE" underline="true" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" size="20.0" />
+                                       </graphic>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="50.0" prefHeight="32.0" prefWidth="296.0" text="new software Call" textFill="WHITE" underline="true" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PHONE" size="20.0" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="96.0" prefWidth="232.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton fx:id="btn_help" alignment="TOP_LEFT" onAction="#Help" prefHeight="30.0" prefWidth="74.0" text="Help" textFill="WHITE" underline="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="20.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btn_help1" alignment="TOP_LEFT" onAction="#Name_Setter" prefHeight="30.0" prefWidth="74.0" text="Setter" textFill="WHITE" underline="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="WRENCH" size="15.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </HBox>
+                     </bottom>
+                     <left>
+                        <VBox alignment="CENTER" prefHeight="440.0" prefWidth="230.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="infor" prefHeight="127.0" prefWidth="215.0" style="-fx-background-color: SEAGREEN; -fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20;" text="WELCOME TO MERMS" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Bodoni MT" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </left>
+                     <right>
+                        <VBox prefHeight="440.0" prefWidth="230.0" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

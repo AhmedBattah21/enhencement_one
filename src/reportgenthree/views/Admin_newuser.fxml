@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="350.0" style="-fx-border-color: seagreen; -fx-border-width: 2;" styleClass="mainFxmlClass" stylesheets="@../AppCss/admin_newuser.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Admin_newuserController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXTabPane prefHeight="291.0" prefWidth="350.0">
+                     <tabs>
+                        <Tab text="Add New Users">
+                          <content>
+                              <VBox prefHeight="180.0" prefWidth="290.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="284.0">
+                                       <children>
+                                          <JFXTextField fx:id="txt_code" prefHeight="35.0" prefWidth="170.0" promptText="Registration Code" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="284.0">
+                                       <children>
+                                          <JFXComboBox fx:id="cmb_groups" prefHeight="35.0" prefWidth="170.0" promptText="User Group" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="284.0">
+                                       <children>
+                                          <JFXButton fx:id="btn_add" onAction="#add" prefHeight="40.0" prefWidth="149.0" text="Add New User" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="284.0">
+                                       <children>
+                                          <Label fx:id="lbl_infor" prefHeight="36.0" prefWidth="210.0" text="Label" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                          </content>
+                        </Tab>
+                        <Tab text="Available Users">
+                           <content>
+                              <VBox prefHeight="180.0" prefWidth="350.0">
+                                 <children>
+                                    <TableView fx:id="table" prefHeight="182.0" prefWidth="290.0" VBox.vgrow="ALWAYS">
+                                      <columns>
+                                        <TableColumn fx:id="cl_username" prefWidth="75.0" text="User Name" />
+                                        <TableColumn fx:id="col_regcode" prefWidth="75.0" text="Registration Code" />
+                                          <TableColumn fx:id="col_status" prefWidth="75.0" text="Status" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </Tab>
+                        <Tab text="Manage Users">
+                           <content>
+                              <VBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="356.0" spacing="10.0">
+                                 <children>
+                                    <JFXTextField fx:id="txt_regcodeTwo" prefHeight="38.0" prefWidth="350.0" promptText="Registration code" />
+                                    <JFXButton fx:id="btn_remove" accessibleText="remove" prefHeight="50.0" prefWidth="180.0" text="Remove User" />
+                                    <JFXButton fx:id="btn_block" accessibleText="block" layoutX="10.0" layoutY="48.0" prefHeight="50.0" prefWidth="180.0" text="Block User" />
+                                    <JFXButton fx:id="btn_unblock" accessibleText="unblock" layoutX="95.0" layoutY="128.0" prefHeight="50.0" prefWidth="180.0" text="UnBlock User" />
+                                    <Label fx:id="lbl_inforTwo" prefHeight="33.0" prefWidth="237.0" text="View Information Here" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox prefHeight="36.0" prefWidth="350.0" style="-fx-background-color: seagreen;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <VBox prefHeight="266.0" prefWidth="8.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <VBox prefHeight="266.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <HBox prefHeight="48.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="351.0" style="-fx-background-color: seagreen;">
+                     <children>
+                        <HBox prefHeight="48.0" prefWidth="299.0">
+                           <children>
+                              <MaterialDesignIconView glyphName="SECURITY" size="30.0" />
+                              <Label text="Add New User">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="55.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" onAction="#close" prefHeight="39.0" prefWidth="49.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="REMOVE" size="30.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

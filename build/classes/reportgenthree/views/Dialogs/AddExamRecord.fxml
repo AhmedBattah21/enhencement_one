@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="mypane" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Dialogs.AddExamRecordController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="320.0" maxWidth="320.0" prefHeight="320.0" prefWidth="320.0" styleClass="infor_layout">
+          <stylesheets>
+              <URL value="@addexamrecord.css" />
+          </stylesheets>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="334.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="168.0" text="Enter Score" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="168.0" text="Choose Subject">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="293.0" styleClass="infor_hbox">
+                     <children>
+                        <ComboBox fx:id="cmb_unit" prefHeight="32.0" prefWidth="292.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="42.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="168.0" text="Subject Score">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="74.0" prefHeight="38.0" prefWidth="293.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <TextField fx:id="txt_score" onKeyReleased="#checkScore" prefHeight="32.0" prefWidth="261.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbl_icon" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" prefWidth="26.0" text="Label">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TIMES" size="15.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btn_add" onAction="#save_data" prefHeight="38.0" prefWidth="293.0" text="Save Score">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="149.0" prefHeight="38.0" prefWidth="293.0" styleClass="infor_hbox">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lbl_result" prefHeight="31.0" prefWidth="235.0" text="Score Results" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.topBar{
+    
+    -fx-background-color: seagreen;
+    
+}
+
+.center{
+    
+    -fx-background-image: url("images/1.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.centerBar{
+    
+    -fx-background-color: rgba(0,128,0,0.0);
+    
+}
+
+.bar{
+    
+  -fx-background-color: transparent;
+   
+  -fx-border-radius: 20 0 20 0;
+  -fx-background-radius: 20 0 20 0;
+  
+  -fx-border-color: seagreen;
+}

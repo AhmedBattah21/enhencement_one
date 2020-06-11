@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="475.0" prefWidth="870.0" stylesheets="@examination_views.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.ExaminationViews.Examination_viewsController">
+   <children>
+      <JFXTabPane fx:id="Parent_tab" styleClass="infor_layout">
+         <tabs>
+            <Tab fx:id="default_tab" text="Examination Files">
+               <content>
+                  <StackPane>
+                     <children>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true">
+                           <content>
+                              <VBox fx:id="default_fileholder" alignment="TOP_CENTER" prefHeight="434.0" prefWidth="836.0" spacing="10.0" styleClass="infor_layout" />
+                           </content>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Examination Files Tab" />
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem mnemonicParsing="false" onAction="#close" text="Close Examination Tab" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </ScrollPane>
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</StackPane>

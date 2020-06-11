@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="309.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.SemisterDurationSetterController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="310.0" maxWidth="640.0" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: skyblue;" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/reportgenthree/AppCss/semisterdurationsetter.css" />
+          </stylesheets>
+         <children>
+            <VBox prefHeight="400.0" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="62.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <Label prefHeight="62.0" prefWidth="73.0" text="DAY">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_day" layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="59.0" text="12">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="10.0" prefHeight="62.0" prefWidth="131.0" text="MONTH">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_month" layoutX="167.0" layoutY="10.0" prefHeight="62.0" prefWidth="161.0" text="Dec">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="241.0" layoutY="10.0" prefHeight="62.0" prefWidth="106.0" text="YEAR">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbl_year" layoutX="372.0" layoutY="10.0" prefHeight="62.0" prefWidth="83.0" text="2018">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="600.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="120.0" text="First Term:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="From:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t1start" defaultColor="#156bb0" editable="false" prefHeight="33.0" prefWidth="171.0" promptText="Term One Start Date" />
+                        <Label layoutX="113.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="To:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t1end" defaultColor="#156bb0" editable="false" layoutX="175.0" layoutY="20.0" prefHeight="33.0" prefWidth="171.0" promptText="Term One End Date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="72.0" prefHeight="53.0" prefWidth="600.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="120.0" text="Second Term:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="From:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t2start" editable="false" prefHeight="33.0" prefWidth="171.0" promptText="Term Two Start Date" />
+                        <Label layoutX="113.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="To:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t2end" editable="false" layoutX="175.0" layoutY="20.0" prefHeight="33.0" prefWidth="171.0" promptText="Term One End Date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="125.0" prefHeight="53.0" prefWidth="600.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="120.0" text="Third Term:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="From:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t3start" defaultColor="#357a46" editable="false" prefHeight="33.0" prefWidth="171.0" promptText="Term Three Start Date" />
+                        <Label layoutX="113.0" layoutY="19.0" prefHeight="36.0" prefWidth="60.0" text="To:">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dp_t3end" defaultColor="#357a46" editable="false" layoutX="175.0" layoutY="20.0" prefHeight="33.0" prefWidth="171.0" promptText="Term Three End Date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="15.0" layoutY="198.0" prefHeight="53.0" prefWidth="600.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="btn_save" onAction="#set_dates" prefHeight="35.0" prefWidth="324.0" text="Save Durations" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

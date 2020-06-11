@@ -1,0 +1,101 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.infor_layout{
+    
+    -fx-border-color: white;
+     -fx-background-color: rgb(255.0, 255.0, 255.0);
+    
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.5, 0.0,
+        1.5);
+    -fx-padding: 5 5 5 5;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    
+    
+}
+
+.searchBar{
+    
+    -fx-border-color: #cccccc;
+    -fx-background-color: #cccccc;
+    
+}
+
+.searchBar:hover>.glyph-icon{
+    
+    -fx-fill: white;
+    
+}
+
+#infor_box{
+    
+    -fx-border-color:deepskyblue;
+    -fx-border-width:1;
+    -fx-border-radius: 5;
+    -fx-background-color: #ccffcc;
+     
+    
+}
+
+#infor_box:hover{
+    
+    -fx-border-color:green;
+    -fx-border-width:1;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+    
+     
+    
+}
+
+#infor_box_inner:hover{
+    
+    -fx-background-color: white;
+    -fx-text-fill:blue;
+    -fx-font-weight:bold;
+    
+}
+
+
+#infor_box:hover >.infor_box_inner.label{
+    
+    -fx-text-fill:blue;
+    
+}
+
+#infor_box_inner:hover >.label{
+    
+    -fx-text-fill:blue;
+    
+}
+
+
+.button{
+    
+    -fx-border-color: deepskyblue;
+    -fx-text-fill: green;
+    -fx-fill: red;
+}
+
+.button:hover>.glyph-icon{
+    
+    
+    -fx-fill: red;
+}
+
+.button>.glyph-icon{
+    
+    
+    -fx-fill: green;
+    
+}
+
+
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" prefHeight="539.0" prefWidth="400.0" stylesheets="@../AppCss/fees_createaccount.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.FeesViews.Fees_CreateAccountController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="400.0" opacity="0.15" pickOnBounds="true">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" maxHeight="540.0" maxWidth="400.0" prefHeight="600.0" prefWidth="400.0" style="-fx-border-color: skyblue;" styleClass="mainFxmlClass">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox prefHeight="520.0" prefWidth="352.0" spacing="2.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="136.0" prefHeight="40.0" prefWidth="388.0" styleClass="infor_hbox">
+                           <children>
+                              <TextField fx:id="txt_regno" onKeyReleased="#getStudent" prefHeight="27.0" prefWidth="210.0" promptText="Enter Student Registration Number" />
+                              <ComboBox fx:id="cmb_Accyear" prefHeight="27.0" prefWidth="167.0" promptText="Select Year" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxHeight="55.0" prefHeight="55.0" prefWidth="301.0" spacing="5.0" styleClass="infor_hbox">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Label fx:id="lbl_name" alignment="CENTER" prefHeight="47.0" prefWidth="388.0" text="**************Student Name ************">
+                                 <font>
+                                    <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="73.0" maxHeight="55.0" prefHeight="55.0" prefWidth="301.0" styleClass="infor_hbox">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Label fx:id="lbl_course" alignment="CENTER" prefHeight="47.0" prefWidth="384.0" text="**************Student Course ************">
+                                 <font>
+                                    <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="84.0" maxHeight="55.0" prefHeight="55.0" prefWidth="301.0" styleClass="infor_hbox">
+                           <children>
+                              <Label fx:id="lbl_category" alignment="CENTER" prefHeight="47.0" prefWidth="388.0" text="**************Student Category ************">
+                                 <font>
+                                    <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox styleClass="infor_hbox">
+                           <children>
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="53.0" prefWidth="301.0" spacing="5.0">
+                                 <children>
+                                    <JFXComboBox fx:id="cmb_acctype" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="146.0" promptText="Account Type" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="142.0" prefWidth="352.0" spacing="5.0">
+                                 <children>
+                                    <Circle fx:id="rect_image" fill="WHITE" radius="69.0" stroke="#e4e1e1" strokeType="INSIDE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="354.0" spacing="5.0" styleClass="infor_hbox">
+                           <children>
+                              <JFXButton fx:id="btn_register" onAction="#createAccount" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Create">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SAVE" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_Cancel" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="170.0" styleClass="JFXButton" text="Cancel">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="REMOVE" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="398.0" spacing="5.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView glyphName="SHIRTSINBULK" size="40.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="261.0" text="Create Fee Account">
+                           <font>
+                              <Font name="Bodoni MT Black" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="160.0" prefHeight="600.0" prefWidth="160.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Students_NavBarController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="160.0" text="Students">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_newStudent" onAction="#open_studentRegForm" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="New Student">
+               <graphic>
+                  <MaterialDesignIconView glyphName="ACCOUNT_PLUS" size="25.0" styleClass="Glyph_icon" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_edit" layoutX="10.0" layoutY="50.0" onAction="#open_studentFindForm" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Find Record">
+               <graphic>
+                  <FontAwesomeIconView glyphName="BINOCULARS" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_view" layoutX="10.0" layoutY="90.0" onAction="#open_studentViewListDataForm" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="View Record">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USERS" size="25.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_delete" layoutX="10.0" layoutY="130.0" onAction="#open_studentDeleteDataForm" prefHeight="60.0" prefWidth="160.0" styleClass="Basic_Button" text="Delete Record">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TRASH" size="25.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../AppCss/Basic_NavBar_Style.css" />
+      <URL value="@../AppCss/students_navbar.css" />
+   </stylesheets>
+</AnchorPane>

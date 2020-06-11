@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 26, 2018, 11:16:25 AM
+    Author     : Computer
+*/
+
+.tree-cell {
+    
+	-fx-background-color: seagreen;
+	-fx-text-fill: white;
+        -fx-font-size:15;
+}
+
+.tree-cell>.glyph-icon{
+    
+	-fx-fill: black;
+        -fx-font-family:"FontAwesome";
+        -fx-font-size:18px;
+        
+}
+
+.tree-cell:selected,.tree-cell:hover{
+    
+	-fx-background-color: lightgreen;
+	-fx-text-fill: black;
+        -fx-font-size:15;
+}
+
+

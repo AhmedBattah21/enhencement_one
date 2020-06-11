@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane prefHeight="400.0" prefWidth="395.0" stylesheets="@../AppCss/teachers_assignunits.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Teachers_AssignunitsController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="400.0" maxWidth="395.0" prefHeight="400.0" prefWidth="395.0" styleClass="infor_layout">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="395.0" spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="395.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="290.0" text="Assign Units To Teachers">
+                           <font>
+                              <Font name="Bodoni MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="395.0" styleClass="infor_hbox">
+                     <children>
+                        <ComboBox fx:id="cmb_tname" prefHeight="35.0" prefWidth="360.0" promptText="Select Teachers Name" visibleRowCount="6" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="infor1" contentDisplay="GRAPHIC_ONLY" prefHeight="40.0" prefWidth="20.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="395.0" styleClass="infor_hbox">
+                     <children>
+                        <ComboBox fx:id="cmb_unitname" prefHeight="36.0" prefWidth="235.0" promptText="Select Unit Name" visibleRowCount="6" />
+                        <Label fx:id="infor2" contentDisplay="GRAPHIC_ONLY" prefHeight="40.0" prefWidth="20.0" text="Label" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="395.0" styleClass="infor_hbox">
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                     <children>
+                        <ComboBox fx:id="cmb_coursename" prefHeight="35.0" prefWidth="360.0" promptText="Select Class" visibleRowCount="6" />
+                        <Label fx:id="infor3" contentDisplay="GRAPHIC_ONLY" prefHeight="40.0" prefWidth="20.0" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="395.0" styleClass="infor_hbox">
+                     <children>
+                        <ComboBox fx:id="cmb_year" prefHeight="36.0" prefWidth="235.0" promptText="Select Year Of Study" visibleRowCount="6" />
+                        <Label fx:id="infor4" contentDisplay="GRAPHIC_ONLY" prefHeight="40.0" prefWidth="20.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="395.0" styleClass="infor_hbox">
+                     <children>
+                        <Button fx:id="btn_save" mnemonicParsing="false" onAction="#assign_unit" prefHeight="37.0" prefWidth="215.0" text="Save">
+                           <font>
+                              <Font name="Bodoni MT Italic" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="330.0" prefHeight="25.0" prefWidth="383.0" styleClass="infor_hbox">
+                     <children>
+                        <Label fx:id="lbl_details" prefHeight="17.0" prefWidth="384.0" textFill="#d30909" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

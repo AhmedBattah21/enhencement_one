@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="48.0" prefWidth="742.0" styleClass="infor_layout" stylesheets="@../AppCss/studentexam_holdertitle.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="reportgenthree.views.StudentExam_holdertitleController">
+   <children>
+      <HBox alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="36.0" prefWidth="730.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lbl_title" prefHeight="30.0" prefWidth="677.0" text="Examination Term" textFill="#a81010">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TIMES" size="15.0" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

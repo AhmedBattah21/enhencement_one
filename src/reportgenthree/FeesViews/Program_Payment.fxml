@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="459.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.FeesViews.Program_PaymentController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="480.0" opacity="0.09" pickOnBounds="true">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" maxHeight="420.0" maxWidth="480.0" prefHeight="400.0" prefWidth="510.0" style="-fx-border-color: skyblue;" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@program_payment.css" />
+          </stylesheets>
+         <children>
+            <VBox prefHeight="400.0" prefWidth="515.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="509.0" style="-fx-background-color: skyblue;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="SCHOOL PROGRAM PAYMENTS">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" styleClass="infor_hbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ComboBox fx:id="cmb_pname" prefHeight="38.0" prefWidth="457.0" promptText="Select Program Name" visibleRowCount="5" />
+                        <Label fx:id="one" contentDisplay="GRAPHIC_ONLY" maxWidth="15.0" prefHeight="45.0" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="64.0" prefHeight="50.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="255.0" styleClass="infor_hbox" HBox.hgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="txt_receiptno" prefHeight="34.0" prefWidth="241.0" promptText="Receipt Number">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Label fx:id="two" contentDisplay="GRAPHIC_ONLY" maxWidth="15.0" prefHeight="45.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="11.0" prefHeight="49.0" prefWidth="216.0" styleClass="infor_hbox">
+                           <children>
+                              <ComboBox fx:id="cmb_mode" prefHeight="33.0" prefWidth="239.0" promptText="Mode Of Payment" />
+                              <Label fx:id="three" contentDisplay="GRAPHIC_ONLY" maxWidth="15.0" prefHeight="45.0" text="Label" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="120.0" prefHeight="50.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="285.0" styleClass="infor_hbox" HBox.hgrow="NEVER">
+                           <children>
+                              <JFXDatePicker fx:id="datepicker" editable="false" prefHeight="34.0" prefWidth="216.0" promptText="Date Of Payment" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="12.0" layoutY="64.0" prefHeight="50.0" styleClass="infor_hbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="txt_comment" prefHeight="49.0" prefWidth="459.0" text="***********Name ***********">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="232.0" prefHeight="50.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="txt_adm" layoutX="10.0" layoutY="18.0" onKeyReleased="#set_name" prefHeight="40.0" prefWidth="214.0" promptText="Student Admission Number" style="-fx-border-color: skyblue; -fx-border-radius: 5; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="four" contentDisplay="GRAPHIC_ONLY" maxWidth="15.0" prefHeight="45.0" text="Label" />
+                        <TextField fx:id="txt_amount" prefHeight="40.0" prefWidth="214.0" promptText="Amount In Kshs." style="-fx-border-color: skyblue; -fx-border-radius: 5; -fx-background-radius: 5;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="six" contentDisplay="GRAPHIC_ONLY" maxWidth="15.0" prefHeight="45.0" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="12.0" layoutY="291.0" prefHeight="54.0" prefWidth="505.0">
+                     <children>
+                        <JFXButton fx:id="btn_payment" onAction="#add_payment" prefHeight="38.0" prefWidth="238.0" style="-fx-border-color: skyblue; -fx-background-radius: 5; -fx-border-radius: 5;" text="Save Payments" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

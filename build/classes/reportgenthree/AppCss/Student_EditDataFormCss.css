@@ -1,0 +1,105 @@
+
+
+.mainFxmlClass{
+    
+   -fx-border-width: 1px;
+    -fx-border-color: deepskyblue; 
+    
+}
+
+.searchBar{
+    
+    -fx-background-radius:30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #cccccc;
+    -fx-background-color: #cccccc;
+    
+}
+
+.searchBar:hover>.glyph-icon{
+    
+    -fx-fill: black;
+    
+}
+
+.search_TextBox:focused>.glyph-icon{
+    
+    -fx-fill: red;
+    
+}
+
+.search_TextBox{
+    
+    -fx-background-radius:20 20 20 20;
+    -fx-border-radius: 20 20 20 20;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: white;
+    
+}
+
+.JFXButton{
+    
+    -fx-border-color: lightgreen;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    
+}
+
+
+.JFXButton:hover{
+    
+    -fx-border-color:green;
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+    
+}
+
+.JFXButton:hover>.glyph-icon{
+    
+    -fx-border-color:green;
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+    -fx-fill:white;
+    
+}
+
+
+.infor_layout{
+    
+    -fx-border-color: white;
+     -fx-background-color: rgb(255.0, 255.0, 255.0);
+    
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.5, 0.0,
+        1.5);
+    -fx-padding: 5 5 5 5;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+    
+}
+
+.infor_hbox{
+    
+    -fx-border-color:lightgray;;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    
+}
+.combo-box{
+    
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    
+}
+.text-field{
+    
+    -fx-border-color: transparent;
+     -fx-background-color: transparent;
+    
+}
+.button{
+    
+  -fx-border-radius: 5;
+   -fx-background-radius: 5;  
+    
+}
+

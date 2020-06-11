@@ -1,0 +1,50 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.pane{
+    
+    
+    -fx-background-color: transparent;
+   
+    
+}
+
+
+.description_left{
+    
+    -fx-background-image: url("icons/font.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    
+}
+
+
+
+
+.alignPane{
+    
+    -fx-border-color:deepskyblue;
+  
+}
+
+.ColorPane{
+    
+   -fx-border-color: deepskyblue;
+    
+   
+    
+}
+
+.button{
+    
+    -fx-border-color: seagreen;
+    -fx-border-radius: 2 2 2 2;
+    -fx-background-radius: 2 2 2 2;
+    
+}
+

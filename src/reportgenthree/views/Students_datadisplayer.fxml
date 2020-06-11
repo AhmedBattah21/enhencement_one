@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="Parent" maxWidth="820.0" prefHeight="326.0" prefWidth="746.0" stylesheets="@../AppCss/students_datadisplayer.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Students_datadisplayerController">
+   <children>
+      <ImageView fitHeight="320.0" fitWidth="800.0" opacity="0.11" pickOnBounds="true">
+         <image>
+            <Image url="@../AppCss/images/school.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" maxHeight="320.0" maxWidth="800.0" prefHeight="316.0" prefWidth="746.0" style="-fx-border-color: SEAGREEN;" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/reportgenthree/AppCss/students_datadisplayer.css" />
+          </stylesheets>
+         <children>
+            <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: SKYBLUE;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="761.0">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="70.0" text="Adm No." textFill="#d03709">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_adm" prefHeight="34.0" prefWidth="108.0" text="CHD/995" textFill="#460acf">
+                                 <font>
+                                    <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#close_window" onDragDetected="#close_window" style="-fx-background-color: white; -fx-border-radius: 50; -fx-background-radius: 50;" text="Button">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TIMES" size="25" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="266.0" prefWidth="693.0" spacing="3.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="266.0" prefWidth="186.0" spacing="5.0">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="186.0" text="Student Profile Picture" textFill="#1fa3a6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="circle_image" fill="DODGERBLUE" radius="76.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="240.0" prefWidth="556.0" spacing="5.0">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="186.0" text="Student Details" textFill="#1fa3a6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="51.0" text="Name:" textFill="#344e63">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_std_name" layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="446.0" text="Katana Michael Menza" textFill="#1fa3a6">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="54.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="92.0" text="Course:" textFill="#d03709">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_course" layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="412.0" text="Mathematics and Computer Science" textFill="#761fa6">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="91.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="92.0" text="Category" textFill="#d03709">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_category" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="349.0" text="Full Time Student" textFill="#761fa6">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="93.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="114.0" text="Year Of Study:" textFill="#d03709">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_year" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="108.0" text="Third Year" textFill="#761fa6">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="132.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="169.0" text="Examinations Done" textFill="#d03709">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#bf1fc2" glyphName="STAR" size="25.0" />
+                                       </graphic>
+                                    </Label>
+                                    <Label fx:id="lbl_exam" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="30.0" text="54" textFill="#761fa6">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="171.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="75.0" text="From" textFill="#0a0acf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#495165" glyphName="CALENDAR" size="25.0" />
+                                       </graphic>
+                                    </Label>
+                                    <Label fx:id="lbl_dor" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="200.0" text="23-Jul-2016" textFill="#d03709">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="85.0" layoutY="10.0" prefHeight="34.0" prefWidth="25.0" text="To" textFill="#241c63">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbl_dof" layoutX="85.0" layoutY="10.0" prefHeight="26.0" prefWidth="153.0" text="24-Jul-2018" textFill="#d03709">
+                                       <font>
+                                          <Font name="Lucida Calligraphy Italic" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="15.0" layoutY="210.0">
+                                 <children>
+                                    <Label fx:id="lbl_tname" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="239.0" text="Teacher Name" textFill="#0a0acf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#495165" glyphName="USER_SECRET" size="25.0" />
+                                       </graphic>
+                                    </Label>
+                                    <Label fx:id="lbl_debt" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="278.0" text="Department" textFill="#0a0acf">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#495165" glyphName="USER_SECRET" size="25.0" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="746.0" spacing="5.0">
+                     <children>
+                        <JFXButton onAction="#view_image" text="View Image">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EYE" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="344.0" layoutY="15.0" text="Change/Edit Image">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EDIT" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="383.0" layoutY="15.0" onAction="#more_infor" text="Go To Profile">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BUILDING_ALT" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

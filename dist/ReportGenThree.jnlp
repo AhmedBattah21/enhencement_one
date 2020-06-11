@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ReportGenThree.jnlp">
+  <information>
+    <title>ReportGenThree</title>
+    <vendor>Computer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ReportGenThree.jar" size="16005319" download="eager" />
+    <jar href="lib\bridj-0.7.0.jar" size="935929" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\fontawesomefx-8.7.jar" size="438884" download="eager" />
+    <jar href="lib\itextpdf-5.4.0.jar" size="1889485" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2384520" download="eager" />
+    <jar href="lib\poi-3.9.jar" size="1869113" download="eager" />
+    <jar href="lib\slf4j-api-1.7.2.jar" size="26083" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.7.2.jar" size="3201133" download="eager" />
+    <jar href="lib\webcam-capture-0.3.12.jar" size="428314" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ReportGenThree" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="reportgenthree.ReportGenThree"  name="ReportGenThree" />
+  <update check="always"/>
+</jnlp>

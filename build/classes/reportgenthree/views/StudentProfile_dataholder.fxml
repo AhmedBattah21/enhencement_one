@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mypane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.StudentProfile_dataholderController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/studentprofile_dataholder.css">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <VBox prefHeight="456.0" prefWidth="203.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Circle fx:id="image_holder" fill="WHITE" radius="90.0" stroke="#e8e0e0" strokeType="INSIDE" />
+                           </children>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="btn_details" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="15.0" layoutY="15.0" onAction="#funnyMethod" prefHeight="38.0" prefWidth="193.0" text="Student  Information" underline="true">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXButton>
+                              <JFXButton fx:id="btn_examination" alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="38.0" prefWidth="193.0" text="Examinations Files" underline="true">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXButton>
+                              <JFXButton fx:id="btn_fstatements" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="193.0" text="Fee Statements" underline="true">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXButton>
+                              <Label text="Other Links" />
+                              <JFXButton fx:id="btn_details1" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="101.0" onAction="#funnyMethod" prefHeight="29.0" prefWidth="183.0" text="New Student">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic></JFXButton>
+                              <JFXButton fx:id="btn_details11" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="166.0" onAction="#edit_data" prefHeight="29.0" prefWidth="183.0" text="Edit Student Details">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic></JFXButton>
+                              <JFXButton fx:id="btn_details112" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="200.0" onAction="#edit_image" prefHeight="29.0" prefWidth="183.0" text="Change Image">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="btn_details111" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="200.0" onAction="#funnyMethod" prefHeight="29.0" prefWidth="183.0" text="Add Other Details">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ANGLE_DOUBLE_RIGHT" size="20.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </left>
+               <center>
+                  <JFXTabPane fx:id="parenttab" rotateGraphic="true" BorderPane.alignment="CENTER">
+                     <tabs>
+                        <Tab fx:id="default_pane" text="Welcome To Merms">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </padding>
+</StackPane>

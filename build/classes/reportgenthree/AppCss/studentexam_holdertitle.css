@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.infor_layout{
+    
+    -fx-border-color: white;
+     -fx-background-color: rgb(255.0, 255.0, 255.0);
+    -fx-background-radius: 3.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.5, 0.0,
+        1.5);
+    -fx-padding: 2 2 2 2;
+    -fx-border-radius: 3 3 3 3;
+    -fx-background-radius: 3 3 3 3;
+    
+}

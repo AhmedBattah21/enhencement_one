@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="383.0" prefWidth="344.0" stylesheets="@../AppCss/teacher_tasks.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.Teacher_TasksController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="353.0" prefWidth="344.0" styleClass="infor_layout">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="353.0" prefWidth="344.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="190.0" text="Add New Teachers Tasks">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="344.0" spacing="5.0" styleClass="infor_hbox">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="83.0" text="Task Name:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txt_taskname" prefHeight="25.0" prefWidth="220.0" promptText="Enter Task Name" />
+                        <Label fx:id="lbl_infor" prefHeight="27.0" prefWidth="28.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="46.0" prefWidth="344.0" spacing="5.0">
+                     <children>
+                        <JFXCheckBox fx:id="check_character" prefHeight="36.0" prefWidth="284.0" text="Task Character (Tick If Task Is Common)">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="46.0" prefWidth="344.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="btn_add" onAction="#add_task" text="Add Task" />
+                        <JFXButton fx:id="btn_remove" layoutX="150.0" layoutY="21.0" onAction="#remove_task" text="Remove Task" />
+                     </children>
+                  </HBox>
+                  <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="col_code" maxWidth="80.0" minWidth="80.0" text="Task Code" />
+                      <TableColumn fx:id="col_taskname" prefWidth="75.0" text="Task Name" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

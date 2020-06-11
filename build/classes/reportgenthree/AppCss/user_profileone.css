@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.profile_bar{
+    
+   -fx-background-image: url(images/image_one.jpg);
+   -fx-background-repeat: stretch;
+    
+}

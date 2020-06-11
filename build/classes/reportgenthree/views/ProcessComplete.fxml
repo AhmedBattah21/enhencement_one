@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="334.0" styleClass="mainFxmlClass" stylesheets="@../AppCss/processcomplete.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.ProcessCompleteController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="207.0" text="Document Created">
+               <font>
+                  <Font name="Bodoni MT" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="GREEN" glyphName="CHECK_CIRCLE" size="20.0" />
+               </graphic>
+            </Label>
+            <FontAwesomeIconView fill="GREEN" glyphName="EXCLAMATION_CIRCLE" size="200.0" wrappingWidth="176.57142639160156" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="253.0" prefHeight="58.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <Label fx:id="lbl_infor" prefHeight="53.0" prefWidth="325.0" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <JFXButton fx:id="btn_openfile" layoutX="10.0" layoutY="10.0" onAction="#openFile" prefHeight="40.0" prefWidth="140.0" text="Open Document File" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="364.0" prefWidth="330.0" style="-fx-border-color: seagreen;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportgenthree.views.CreateBackUpController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="307.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/reportgenthree/AppCss/createbackup.css" />
+          </stylesheets>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="330.0" style="-fx-background-color: seagreen;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="190.0" text="Fee Rcords Back Up">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="84.0" prefWidth="330.0">
+                     <children>
+                        <JFXButton fx:id="btn_choosepath" onAction="#choosePath" text="Select Destination Folder">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="61.0" prefHeight="49.0" prefWidth="330.0">
+                     <children>
+                        <JFXTextField fx:id="txt_path" labelFloat="true" prefHeight="35.0" prefWidth="322.0" promptText="Selected Path">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="61.0" prefHeight="66.0" prefWidth="330.0">
+                     <children>
+                        <JFXButton fx:id="btn_create" onAction="#runTaskBackUp" text="Create Back Up">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="194.0" prefHeight="46.0" prefWidth="330.0" spacing="20.0">
+                     <children>
+                        <JFXProgressBar fx:id="progressbar" prefHeight="14.0" prefWidth="173.0" />
+                        <Label fx:id="lbl_infor" prefHeight="31.0" prefWidth="158.0" text="Back Up Created" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" prefHeight="51.0" prefWidth="330.0">
+                     <children>
+                        <JFXButton fx:id="btn_close" onAction="#close" prefHeight="39.0" prefWidth="125.0" text="Close" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="308.0" prefHeight="19.0" prefWidth="330.0" style="-fx-background-color: seagreen;" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
